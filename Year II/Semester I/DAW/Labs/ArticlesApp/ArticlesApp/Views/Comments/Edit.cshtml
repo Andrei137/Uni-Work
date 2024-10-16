@@ -1,0 +1,24 @@
+﻿@model ArticlesApp.Models.Comment
+
+<h2>Editare comentariu</h2>
+<br />
+@using (Html.BeginForm(actionName: "Edit", controllerName: "Comments"))
+{
+    <div class="row">
+        <div class="col-6 offset-3">
+            @Html.ValidationSummary(false, "", new { @class = "text-danger" })
+
+            @Html.Label("Content", "Continut comentariu")
+            <br />
+
+            @Html.TextArea("Content", Model.Content, new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.Content, null, new { @class = "text-danger" })
+            <br /><br />
+
+            <button class="btn btn-success" type="submit">Editeaza comentariul</button>
+
+        </div>
+
+    </div>
+}
+

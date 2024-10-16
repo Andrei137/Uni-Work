@@ -1,0 +1,16 @@
+﻿<form method="GET" action="/Memberships/Search">
+    <div class="row">
+        <div class="col-6 offset-3">
+            @Html.ValidationSummary(false, "Campurile sunt obligatorii", new { @class = "text-danger" })
+
+            @Html.Label("date1", "Data minima")
+            <input type="date" class="form-control" placeholder="DateTime.Now" name="date2" value="@ViewBag.Date1" />
+            <br /><br />
+
+            @Html.Label("date2", "Data maxima")
+            <input type="date" class="form-control" placeholder="DateTime.Now" name="date1" value="@ViewBag.Date2" />
+
+            <button class="btn btn-outline-success" type="submit">Search</button>
+        </div>
+    </div>
+</form>

@@ -1,0 +1,146 @@
+﻿@model ArticlesApp.Models.Article
+
+<h2 class="text-center">Afisare articol</h2>
+
+@if (ViewBag.Message != null)
+{
+    <h2 class="@ViewBag.Alert p-3 rounded-3 text-center mb-5">@ViewBag.Message</h2>
+}
+
+<br />
+
+<div class="card">
+
+    @Html.Partial("ArticleInfo", Model)
+
+    <hr />
+
+        @if ((ViewBag.AfisareButoane == true && Model.UserId == ViewBag.UserCurent) || ViewBag.EsteAdmin)
+        {
+            <div class="d-flex flex-row justify-content-between">
+
+                <a class="btn btn-primary" href="/Articles/Edit/@Model.Id">Editeaza</a>
+
+                <form method="post" action="/Articles/Delete/@Model.Id">
+
+                    <button type="submit" class="btn btn-danger">Sterge</button>
+
+                 </form>
+
+            </div>
+        }
+
+        <form method="post" asp-controller="Articles" asp-action="AddBookmark">
+            <input type="hidden" name="ArticleId" value="@Model.Id" />
+            <div class="d-flex flex-row justify-content-center p-3 border-1 border-top">
+                <div>
+                    <select name="BookmarkId" class="form-control">
+                        <option selected>Adauga acest articol intr-o colectie</option>
+                        @foreach (var bookmark in ViewBag.UserBookmarks)
+                        {
+                            <option value="@bookmark.Id">@bookmark.Name</option>
+                        }
+                    </select>
+                </div>
+                <div>
+                    <input type="submit" class="btn btn-success alert-success" value="+" />
+                </div>
+            </div>
+        </form>
+    
+</div>
+
+<br />
+<br />
+
+@foreach (var comm in Model.Comments)
+{
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2"></div>
+
+            <div class="col-md-8">
+
+                <div>
+
+                    <p>@comm.Content</p>
+                    <small>@comm.Date</small>
+                    <strong><i class="bi bi-person"></i>@comm.User.UserName</strong>
+
+                </div>
+                <br>
+
+                @if (comm.UserId == ViewBag.UserCurent || ViewBag.EsteAdmin)
+                {
+                    <div class="d-flex">
+
+                        <div>
+
+                            <a class="btn btn-outline-primary" href="/Comments/Edit/@comm.Id"><i class="bi bi-pencil-square"></i>Editeaza</a>
+
+                        </div>
+
+                        <div>
+
+                            <form method="post" action="/Comments/Delete/@comm.Id">
+
+                                <button class="btn btn-outline-danger" type="submit"><i class="bi bi-trash"></i>Sterge</button>
+
+                            </form>
+
+                        </div>
+
+                    </div>
+                }
+
+                <br />
+
+            </div>
+
+            <div class="col-md-2"></div>
+
+        </div>
+
+    </div>
+}
+
+<div class="container">
+
+    <div class="row">
+
+        <div class="col-md-2"></div>
+
+        <div class="col-md-8">
+
+            <div class="card">
+
+                <form method="post" action="/Articles/Show/@Model.Id">
+
+                    <div class="card-body">
+
+                        <input type="hidden" name="ArticleId" value="@Model.Id" />
+
+                        <label>Continut comentariu</label>
+                        <br />
+
+                        <textarea class="form-control" name="Content"></textarea>
+                        <br />
+
+                        @Html.ValidationMessage("Content", null, new { @class = "text-danger" })
+                        <br /><br />
+
+                        <button class="btn btn-primary" type="submit">Adauga comentariu</button>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-2"></div>
+
+    </div>
+
+</div>

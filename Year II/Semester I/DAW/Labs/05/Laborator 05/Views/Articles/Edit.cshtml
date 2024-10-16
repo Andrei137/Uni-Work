@@ -1,0 +1,24 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<h2>Editare articol</h2>
+<br />
+<form method="post"
+      action="/Articles/Edit/@ViewBag.Articles.Id">
+    <label>Titlu</label>
+    <br />
+    <input type="text" name="Title" value="@ViewBag.Articles.Title" />
+    <br /><br />
+    <label>Content</label>
+    <br />
+    <input type="text" name="Content" value="@ViewBag.Articles.Content" />
+    <br /><br />
+    <label>Data</label>
+    <br />
+    <input type="date" name="Date" value="@ViewBag.Articles.Date" />
+    <br />
+    <br />
+    <button type="submit">Modifica articol</button>
+</form>

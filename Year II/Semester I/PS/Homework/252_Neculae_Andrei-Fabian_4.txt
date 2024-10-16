@@ -1,0 +1,47 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+
+def draw_plot(x, n):
+    bins = np.arange(0, n + 2) - 0.5
+    plt.hist(x, bins, ec="black", density=True)
+    plt.xticks(np.arange(n + 1))
+    plt.show()
+
+
+def poisson(lmbd, n=1000, m=1000):
+    x = (np.random.random((n, m)) < lmbd / m).sum(axis=1)
+    draw_plot(x, max(x))
+
+
+def binomial(n, p, no_simulations=1000):
+    x = np.sum((np.random.random((no_simulations, n)) <= p), axis=1)
+    draw_plot(x, n)
+
+
+def hypergeom(N, K, n):
+    if n == 0:
+        return 0
+    x = np.random.random() < K / N
+    return x + hypergeom(N - 1, K - x, n - 1)
+
+
+def ex4(N, K, n, no_simulations=1000):
+    x = np.array([hypergeom(N, K, n) for _ in range(no_simulations)])
+    draw_plot(x, max(x))
+
+
+print("< Choose exercise to run >")
+print("[1] 3 i")
+print("[2] 3 ii Poisson")
+print("[3] 3 ii Binomiala")
+print("[4] 4")
+method_choice = input("-> ")
+if method_choice == '1':
+    poisson(10)
+elif method_choice == '2':
+    poisson(1, 20)
+elif method_choice == '3':
+    binomial(20, 1 / 20)
+elif method_choice == '4':
+    ex4(50, 35, 10)

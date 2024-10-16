@@ -1,0 +1,59 @@
+﻿@model ExamenDAW.Models.Membership
+
+<h2 class="text-center">Adauga abonament</h2>
+
+@if (ViewBag.Message != null)
+{
+    <div class="alert @ViewBag.Alert p-3 rounded-3 text-center mb-5">
+        @ViewBag.Message
+    </div>
+}
+<br /><br />
+
+@using (Html.BeginForm(actionName: "New", controllerName: "Memberships"))
+{
+    <div class="row">
+        <div class="col-6 offset-3">
+            
+            @Html.ValidationSummary(false, "", new { @class = "text-danger" })
+
+            @Html.Label("Titlu", "Titlu")
+            @Html.TextBox("Titlu", @Model.Titlu, new { @class = "form-control" })
+            @Html.ValidationMessage("Titlu", null, new { @class = "text-danger" })
+            <br /><br />
+
+            @Html.Label("Valoare", "Valoare")
+            <input type="number" class="form-control" name="Valoare" value="@Model.Valoare" required />
+            @Html.ValidationMessage("Valoare", null, new { @class = "text-danger" })
+            <br /><br />
+
+            <input type="hidden" name="DataEmitere" value="@DateTime.Now" />
+
+            @{
+                string year  = Model.DataExpirare.Year.ToString();
+                string month = Model.DataExpirare.Month.ToString();
+                string day   = Model.DataExpirare.Day.ToString();
+
+                if (month.Count() == 1)
+                {
+                    month = "0" + month;
+                }
+                if (day.Count() == 1)
+                {
+                    day = "0" + day;
+                }
+            }
+
+            @Html.Label("DataExpirare", "Data Expirare")
+            <input type="date" name="DataExpirare" class="form-control" value="@year-@month-@day" />
+            @Html.ValidationMessage("DataExpirare", null, new { @class = "text-danger" })
+            <br /><br />
+
+            @Html.Label("GymId", "Alege o sala")
+            @Html.DropDownList("GymId", new SelectList(ViewBag.Gyms, "Value", "Text"), null, new { @class = "form-control" })
+            <br /><br />
+
+            <button class="btn btn-success" type="submit">Adauga abonament</button>
+        </div>
+    </div>
+}

@@ -1,0 +1,98 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Choose number of chords to draw in the simulation:
+num_chords = 10000
+
+
+def draw_circle_and_triangle(ax):
+    circle = plt.Circle((0, 0), 1, color='w', linewidth=2, fill=False)
+    ax.add_patch(circle)  # Draw circle
+    ax.plot([np.cos(np.pi / 2), np.cos(7 * np.pi / 6)],
+            [np.sin(np.pi / 2), np.sin(7 * np.pi / 6)], linewidth=2, color='g')
+    ax.plot([np.cos(np.pi / 2), np.cos(- np.pi / 6)],
+            [np.sin(np.pi / 2), np.sin(- np.pi / 6)], linewidth=2, color='g')
+    ax.plot([np.cos(- np.pi / 6), np.cos(7 * np.pi / 6)],
+            [np.sin(- np.pi / 6), np.sin(7 * np.pi / 6)], linewidth=2, color='g')
+    plt.show()
+
+
+def bertrand_simulation(method_number):
+    # Simulation initialisation parameters
+    count = 0
+
+    # Figure initialisation
+    plt.style.use('dark_background')  # use dark background
+    ax = plt.gca()
+    ax.cla()  # clear things for fresh plot
+    ax.set_aspect('equal', 'box')
+    ax.set_xlim((-1, 1))  # Set x axis limits
+    ax.set_ylim((-1, 1))  # Set y axis limits
+
+    # Repeat the following simulation num_chords times:
+    for k in range(num_chords):
+        # Step 1: Construct chord according to chosen method
+        x, y = bertrand_methods[method_number]()
+
+        # Step 2: Compute length of chord and compare it with triangle side sqrt(3)
+        length = np.sqrt((x[0] - x[1]) ** 2 + (y[0] - y[1]) ** 2)
+        count += length > np.sqrt(3)
+        print("Probability = {:.4f}".format(count / k))  # Display probability after each simulation
+        if k <= 1000:  # only plot the first 1000 chords
+            if length > np.sqrt(3):
+                plt.plot(x, y, color='y', alpha=0.1)
+            else:
+                plt.plot(x, y, color='m', alpha=0.1)
+
+    draw_circle_and_triangle(plt.gca())
+    plt.show()
+
+
+def bertrand1():
+    """Generate random chords and midpoints using "Method 1".
+
+    Pairs of (uniformly-distributed) random points on the unit circle are
+    selected and joined as chords.
+
+    """
+    theta1 = np.random.random() * 2 * np.pi
+    theta2 = np.random.random() * 2 * np.pi
+    x = np.cos([theta1, theta2])
+    y = np.sin([theta1, theta2])
+    return x, y
+
+
+def bertrand2():
+    theta = np.random.random() * 2 * np.pi
+    radius = np.sqrt(np.random.random())
+    x0 = np.cos(theta) * radius
+    y0 = np.sin(theta) * radius
+    theta += np.pi * 0.5
+    v = [np.cos(theta), np.sin(theta)]
+    lenght = np.sqrt(1 - x0 * x0 - y0 * y0)
+    x = (x0 + v[0] * lenght, x0 - v[0] * lenght)
+    y = (y0 + v[1] * lenght, y0 - v[1] * lenght)
+    return x, y
+
+
+def bertrand3():
+    theta = np.random.random() * 2 * np.pi
+    radius = np.random.random()
+    x0 = np.cos(theta) * radius
+    y0 = np.sin(theta) * radius
+    theta += np.pi * 0.5
+    v = [np.cos(theta), np.sin(theta)]
+    lenght = np.sqrt(1 - x0 * x0 - y0 * y0)
+    x = (x0 + v[0] * lenght, x0 - v[0] * lenght)
+    y = (y0 + v[1] * lenght, y0 - v[1] * lenght)
+    return x, y
+
+
+bertrand_methods = {1: bertrand1, 2: bertrand2, 3: bertrand3}
+
+print("<Choose method to simulate>")
+print("[1] 1/3 probability")
+print("[2] 1/4 probability")
+print("[3] 1/2 probability")
+method_choice = input("-> ")
+bertrand_simulation(int(method_choice))

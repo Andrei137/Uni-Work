@@ -1,0 +1,40 @@
+﻿<h2 class="text-center">Toate abonamentele</h2>
+
+@if (ViewBag.Message != null)
+{
+    <div class="alert @ViewBag.Alert p-3 rounded-3 text-center mb-5">
+        @ViewBag.Message
+    </div>
+}
+<br /><br />
+
+@if (ViewBag.Count > 0)
+{
+    @foreach (Membership membership in ViewBag.Memberships)
+    {
+        <div class="card">
+
+            <h3 class="card-title alert-success py-3 px-3 rounded-2 text-center">@membership.Titlu</h3>
+
+            <div class="card-text">@membership.Valoare</div>
+
+            <div class="card-text">@membership.DataEmitere</div>
+
+            <div class="card-text">@membership.DataExpirare</div>
+
+            <div class="card-text">@membership.Gym.Nume</div>
+
+        </div>
+
+        <div class="text-center">
+            <a href="/Memberships/Show/@membership.Id" class="btn btn-primary">Afisare abonament</a>
+        </div>
+        <br />
+    }
+}
+else
+{
+    <div class="alert alert-info p-3 rounded-3 text-center">
+        Nu s-a gasit nici un abonament
+    </div>
+}

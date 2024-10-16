@@ -1,0 +1,32 @@
+﻿@model ExamenDAW.Models.Membership
+
+<h2 class="text-center">Afisare abonament</h2>
+
+@if (ViewBag.Message != null)
+{
+    <div class="alert @ViewBag.Alert p-3 rounded-3 text-center mb-5">
+        @ViewBag.Message
+    </div>
+}
+<br /><br />
+
+<div class="card">
+
+    <h3 class="card-title alert-success py-3 px-3 rounded-2 text-center">@Model.Titlu</h3>
+
+    <div class="card-text">@Model.Valoare</div>
+
+    <div class="card-text">@Model.DataEmitere</div>
+
+    <div class="card-text">@Model.DataExpirare</div>
+
+    <div class="card-text">@Model.Gym.Nume</div>
+
+</div>
+
+<div class="text-center">
+    <a href="/Memberships/Edit/@Model.Id" class="btn btn-primary">Editare abonament</a>
+</div>
+<div class="text-center">
+    <a href="/Memberships/Delete/@Model.Id" class="btn btn-danger">Stergere abonament</a>
+</div>

@@ -1,0 +1,52 @@
+﻿@{
+    ViewBag.Title = "Lista categorii";
+}
+
+<h2>@ViewBag.Title</h2>
+<br />  
+
+@if (ViewBag.Message != null)
+{
+    <h2 class="alert-success p-3 rounded-3 text-center mb-5">@ViewBag.Message</h2>
+}
+
+<div class="d-flex justify-content-center">
+
+    <a class="btn btn-outline-success" href="/Articles/Index/">Inapoi la articole</a>
+
+    <br />
+
+    <a class="btn btn-outline-success" href="/Categories/New">Adauga categorie</a>
+
+</div>
+
+<br />
+
+@foreach (var category in ViewBag.Categories)
+{
+    <div class="card">
+
+        <div class="card-body">
+
+            <h3 class="card-title alert-success py-3 px-3 rounded-2 text-center">@category.CategoryName</h3>
+
+            <hr />
+
+            <div class="d-flex flex-row justify-content-between">
+
+                <a class="btn btn-success" href="/Categories/Show/@category.Id">Afiseaza categoria</a>
+
+                <a class="btn btn-primary" href="/Categories/Edit/@category.Id">Editeaza categoria</a>
+
+                <form method="post" action="/Categories/Delete/@category.Id">
+
+                    <button type="submit" class="btn btn-danger">Sterge categoria </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+}

@@ -1,0 +1,22 @@
+﻿@model ArticlesApp.Models.Bookmark
+
+<br />
+
+<h2 class="mb-5 text-center">Adaugare Bookmark</h2>
+
+<br />
+
+@using (Html.BeginForm(actionName: "Edit", controllerName: "Bookmarks", method: FormMethod.Post))
+{
+
+    @Html.Label("Name", "Denumire colectie")
+    <br />
+
+    @Html.TextBox("Name", Model.Name, new { @class = "form-control" })
+    @Html.ValidationMessageFor(m => m.Name, null, new { @class = "text-danger" })
+    <br />
+    <br />
+
+    <button class="btn btn-success" type="submit">Modifica colectia</button>
+}
+

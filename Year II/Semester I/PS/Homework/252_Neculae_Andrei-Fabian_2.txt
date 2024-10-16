@@ -1,0 +1,82 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+
+# pt ex 1, >= 0.5 e fata, < 0.5 e baiat
+def ex_1a(no_simulations=10000):
+    arr = (np.random.random(no_simulations) >= 0.5)  # FF bun, FB rau
+    print("Probabilitatea ca ambii copii sa fie fete,"
+          f"stiind ca cel mare e fata este {arr.sum() / no_simulations}")
+    # ~ 0.5
+
+
+def ex_1b(no_simulations=10000):
+    is_FF = 0
+    count_total = 0
+    for i in range(no_simulations):
+        first_child = np.random.random()
+        second_child = np.random.random()
+        if first_child < 0.5 and second_child < 0.5:  # BB se ignora
+            continue
+        count_total += 1
+        if first_child >= 0.5 and second_child >= 0.5:  # FF bun
+            is_FF += 1
+    print("Probabilitatea ca ambii copii sa fie fete,"
+          f"stiind ca cel mare e fata este {is_FF / count_total}")
+    # ~ 0.33
+
+
+# pt ex 2, >= 0.5 e cap, < 0.5 e pajura
+def ex_2(n, k, no_simulations=10000):
+    nr_cazuri_favorabile = 0
+    for i in range(no_simulations):
+        if (np.random.random(n) >= 0.5).sum() == k:
+            nr_cazuri_favorabile += 1
+    print(f"Probabilitatea de a obtine exact {k} monezi care cad cu"
+          f"capul in sus din {n} aruncari este {nr_cazuri_favorabile / no_simulations}")
+
+
+def ex_3(n, no_intervals=1000):
+    plt.style.use('dark_background')  # use dark background
+    ax = plt.gca()
+    ax.cla()  # clear things for fresh plot
+    ax.set_aspect('equal', 'box')
+    ax.set_xlim((0, 1))  # Set x axis limits
+    ax.set_ylim((0, 1))  # Set y axis limits
+
+    arr = np.random.uniform(0, 1, n)
+    interval_size = 1 / no_intervals
+    no_el = []  # numarul de elemente din fiecare interval
+    for i in range(n):
+        no_el.append(np.logical_and(i * interval_size <= arr, arr < (i + 1) * interval_size).sum())
+    zoom = 1
+    if (no_intervals > 100):
+        zoom = 50
+    for i in range(no_intervals):
+        ax.add_patch(plt.Rectangle((i * interval_size, 0), interval_size,
+                     zoom * no_el[i] / n, facecolor="orange"))
+        plt.pause(0.01)
+    plt.show()
+
+
+print("< Choose exercise to run >")
+print("[0] 1a")
+print("[1] 1b")
+print("[2] 2")
+print("[3] 3 (100 intervals)")
+print("[4] 3 (1000 intervals, zoomed for better visibility)")
+method_choice = input("-> ")
+if method_choice == "0":
+    ex_1a()
+elif method_choice == "1":
+    ex_1b()
+elif method_choice == "2":
+    n = int(input("n = "))
+    k = int(input("k = "))
+    ex_2(n, k)
+elif method_choice == "3":
+    n = int(input("n = "))
+    ex_3(n, 100)
+elif method_choice == "4":
+    n = int(input("n = "))
+    ex_3(n)

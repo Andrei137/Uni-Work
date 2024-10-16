@@ -1,0 +1,7 @@
+u -> Start: 1 Finish: 8 Parent: NIL Component: 1
+v -> Start: 2 Finish: 7 Parent: u Component: 1
+w -> Start: 9 Finish: 12 Parent: NIL Component: 2
+x -> Start: 4 Finish: 5 Parent: y Component: 1
+y -> Start: 3 Finish: 6 Parent: v Component: 1
+z -> Start: 10 Finish: 11 Parent: w Component: 2
+

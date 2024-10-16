@@ -1,0 +1,30 @@
+D:\Programming\C#\Laboratoare\Laborator 04\Laborator 04\bin\Debug\net6.0\appsettings.Development.json
+D:\Programming\C#\Laboratoare\Laborator 04\Laborator 04\bin\Debug\net6.0\appsettings.json
+D:\Programming\C#\Laboratoare\Laborator 04\Laborator 04\bin\Debug\net6.0\Laborator 04.staticwebassets.runtime.json
+D:\Programming\C#\Laboratoare\Laborator 04\Laborator 04\bin\Debug\net6.0\Laborator 04.exe
+D:\Programming\C#\Laboratoare\Laborator 04\Laborator 04\bin\Debug\net6.0\Laborator 04.deps.json
+D:\Programming\C#\Laboratoare\Laborator 04\Laborator 04\bin\Debug\net6.0\Laborator 04.runtimeconfig.json
+D:\Programming\C#\Laboratoare\Laborator 04\Laborator 04\bin\Debug\net6.0\Laborator 04.dll
+D:\Programming\C#\Laboratoare\Laborator 04\Laborator 04\bin\Debug\net6.0\Laborator 04.pdb
+D:\Programming\C#\Laboratoare\Laborator 04\Laborator 04\obj\Debug\net6.0\Laborator 04.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programming\C#\Laboratoare\Laborator 04\Laborator 04\obj\Debug\net6.0\Laborator 04.AssemblyInfoInputs.cache
+D:\Programming\C#\Laboratoare\Laborator 04\Laborator 04\obj\Debug\net6.0\Laborator 04.AssemblyInfo.cs
+D:\Programming\C#\Laboratoare\Laborator 04\Laborator 04\obj\Debug\net6.0\Laborator 04.csproj.CoreCompileInputs.cache
+D:\Programming\C#\Laboratoare\Laborator 04\Laborator 04\obj\Debug\net6.0\Laborator 04.MvcApplicationPartsAssemblyInfo.cache
+D:\Programming\C#\Laboratoare\Laborator 04\Laborator 04\obj\Debug\net6.0\Laborator 04.RazorAssemblyInfo.cache
+D:\Programming\C#\Laboratoare\Laborator 04\Laborator 04\obj\Debug\net6.0\Laborator 04.RazorAssemblyInfo.cs
+D:\Programming\C#\Laboratoare\Laborator 04\Laborator 04\obj\Debug\net6.0\staticwebassets\msbuild.Laborator 04.Microsoft.AspNetCore.StaticWebAssets.props
+D:\Programming\C#\Laboratoare\Laborator 04\Laborator 04\obj\Debug\net6.0\staticwebassets\msbuild.build.Laborator 04.props
+D:\Programming\C#\Laboratoare\Laborator 04\Laborator 04\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.Laborator 04.props
+D:\Programming\C#\Laboratoare\Laborator 04\Laborator 04\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.Laborator 04.props
+D:\Programming\C#\Laboratoare\Laborator 04\Laborator 04\obj\Debug\net6.0\staticwebassets.pack.json
+D:\Programming\C#\Laboratoare\Laborator 04\Laborator 04\obj\Debug\net6.0\staticwebassets.build.json
+D:\Programming\C#\Laboratoare\Laborator 04\Laborator 04\obj\Debug\net6.0\staticwebassets.development.json
+D:\Programming\C#\Laboratoare\Laborator 04\Laborator 04\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\Programming\C#\Laboratoare\Laborator 04\Laborator 04\obj\Debug\net6.0\scopedcss\bundle\Laborator 04.styles.css
+D:\Programming\C#\Laboratoare\Laborator 04\Laborator 04\obj\Debug\net6.0\scopedcss\projectbundle\Laborator 04.bundle.scp.css
+D:\Programming\C#\Laboratoare\Laborator 04\Laborator 04\obj\Debug\net6.0\Laborator 04.dll
+D:\Programming\C#\Laboratoare\Laborator 04\Laborator 04\obj\Debug\net6.0\refint\Laborator 04.dll
+D:\Programming\C#\Laboratoare\Laborator 04\Laborator 04\obj\Debug\net6.0\Laborator 04.pdb
+D:\Programming\C#\Laboratoare\Laborator 04\Laborator 04\obj\Debug\net6.0\Laborator 04.genruntimeconfig.cache
+D:\Programming\C#\Laboratoare\Laborator 04\Laborator 04\obj\Debug\net6.0\ref\Laborator 04.dll

@@ -1,0 +1,9 @@
+Harta                           : https://www.infoarena.ro/job_detail/3190468?action=view-source
+Soldier and Traveling           : https://codeforces.com/problemset/submission/546/240715426
+Negot                           : https://www.infoarena.ro/job_detail/3190571?action=view-source
+Senat                           : https://www.infoarena.ro/job_detail/3190567?action=view-source
+Paznici                         : https://www.infoarena.ro/job_detail/3190620?action=view-source
+No Prime Sum                    : https://csacademy.com/submission/4725074
+Reconstruct Itinerary           : https://leetcode.com/problems/reconstruct-itinerary/submissions/1139744378
+Valid Arrangement Of Pairs      : https://leetcode.com/problems/valid-arrangement-of-pairs/submissions/1139747263
+Shortest Path Visiting All Nodes: https://leetcode.com/problems/shortest-path-visiting-all-nodes/submissions/1139765400

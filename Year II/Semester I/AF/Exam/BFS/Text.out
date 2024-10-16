@@ -1,0 +1,18 @@
+Order of traversal:
+1. r
+Distance: 0 Parent: NIL
+2. s
+Distance: 1 Parent: r
+3. v
+Distance: 1 Parent: r
+4. w
+Distance: 2 Parent: s
+5. t
+Distance: 3 Parent: w
+6. x
+Distance: 3 Parent: w
+7. u
+Distance: 4 Parent: t
+8. y
+Distance: 4 Parent: x
+

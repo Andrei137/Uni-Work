@@ -1,0 +1,21 @@
+import numpy as np
+import matplotlib.pyplot as plt
+from scipy.stats import norm
+
+
+def ex_1(no_simulations=10000):
+    U1 = np.random.random(no_simulations)
+    U2 = np.random.random(no_simulations)
+    Z = np.sqrt(-2 * np.log(U1)) * np.cos(2 * np.pi * U2)
+    plt.hist(Z, bins=30, color="orange", density=True)
+    a = np.linspace(-10, 10, 1000)
+    b = norm.pdf(a, 0, 1)
+    plt.plot(a, b, color="black")
+    plt.show()
+
+
+# print("< Choose exercise to run >")
+# print("[1]")
+method_choice = '1'  # input("-> ")
+if method_choice == '1':
+    ex_1()

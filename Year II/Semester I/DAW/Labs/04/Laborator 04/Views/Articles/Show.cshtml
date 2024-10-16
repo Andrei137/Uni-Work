@@ -1,0 +1,15 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewBag.PageName = "Show";
+}
+<h2>@ViewBag.PageName</h2>
+<hr />
+<h1>@ViewBag.Article.Title</h1>
+<p>@ViewBag.Article.Content</p>
+<small>@ViewBag.Article.Date</small>
+<hr />
+<a href="/Articles/Edit/@ViewBag.Article.Id">Editare articol</a>
+<br />
+<a href="/Articles/Index">Afisare articole</a>

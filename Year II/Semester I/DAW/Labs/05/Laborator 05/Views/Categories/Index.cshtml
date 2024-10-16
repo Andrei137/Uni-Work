@@ -1,0 +1,23 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<h2>Afisare Categorii</h2>
+<br />
+@foreach (var category in ViewBag.Categories)
+{
+    <div>
+        <h3>@category.CategoryName</h3>
+        <br />
+        <a href="/Categories/Show/@category.Id">Afisare categorie</a>
+        <br />
+        <a href="/Categories/Edit/@category.Id">Editare categorie</a>
+        <br />
+        <a href="/Categories/Delete/@category.Id">Stergere categorie</a>
+    </div>
+    <hr />
+}
+<a href="/Categories/New">Adaugare categorie</a>
+<br />
+<a href="/Articles/Index">Schimba la articole</a>
