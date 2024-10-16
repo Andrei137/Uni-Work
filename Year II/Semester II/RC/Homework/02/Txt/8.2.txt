@@ -1,0 +1,14 @@
+Part 1
+
+Step 1
+a. Based on the topology, how many subnets are needed?
+5
+
+b. How many bits must be borrowed to support the number of subnets in the topology table?
+3
+
+c. How many subnets does this create?
+8
+
+d. How many usable hosts does this create per subnet?
+2^5 - 2 = 30 hosts

@@ -1,0 +1,87 @@
+Part 1
+
+Step 1
+d.
+How many host addresses are needed in the largest required subnet?
+50
+
+What is the minimum number of subnets required?
+4
+
+The network that you are tasked to subnet is 192.168.0.0/24. What is the /24 subnet mask in binary?
+1111.1111/1111.1111/1111.1111/0000.0000
+
+e.
+In the network mask, what do the ones represent?
+network
+
+In the network mask, what do the zeros represent?
+host
+
+f. 1) (/25) 11111111.11111111.11111111.10000000
+
+Dotted decimal subnet mask equivalent: 255.255.255.128
+
+Number of subnets? Number of hosts?
+2^1 = 2 subnets
+2^7 - 2 = 126 hosts per subnet
+
+f. 2) (/26) 11111111.11111111.11111111.11000000
+
+Dotted decimal subnet mask equivalent: 255.255.255.192
+
+Number of subnets? Number of hosts?
+2^2 = 4 subnets
+2^6 - 2 = 62 hosts per subnet
+
+f. 3) (/27) 11111111.11111111.11111111.11100000
+
+Dotted decimal subnet mask equivalent: 255.255.255.224
+
+Number of subnets? Number of hosts?
+2^3 = 8 subnets
+2^5 - 2 = 30 hosts per subnet
+
+f. 4) (/28) 11111111.11111111.11111111.11110000
+
+Dotted decimal subnet mask equivalent: 255.255.255.240
+
+Number of subnets? Number of hosts?
+2^4 = 16 subnets
+2^4 - 2 = 14 hosts per subnet
+
+f. 5) (/29) 11111111.11111111.11111111.11111000
+
+Dotted decimal subnet mask equivalent: 255.255.255.248
+
+Number of subnets? Number of hosts?
+2^5 = 32 subnets
+2^3 - 2 = 6 hosts per subnet
+
+f. 6) (/30) 11111111.11111111.11111111.11111100
+
+Dotted decimal subnet mask equivalent: 255.255.255.252
+
+Number of subnets? Number of hosts?
+2^6 = 64 subnets
+2^2 - 2 = 2 hosts per subnet
+
+Considering your answers above, which subnet masks meet the required number of minimum host addresses?
+/25, /26
+
+Considering your answers above, which subnet masks meets the minimum number of subnets required?
+/26, /27, /28, /29, /30
+
+Considering your answers above, which subnet mask meets both the required minimum number of hosts and the minimum number of subnets required?
+/26
+
+Part 3
+
+a. Determine if PC-A can communicate with its default gateway. Do you get a reply?
+Da
+
+b. Determine if PC-B can communicate with its default gateway. Do you get a reply?
+Da
+
+c. Determine if PC-A can communicate with PC-B. Do you get a reply?
+Da

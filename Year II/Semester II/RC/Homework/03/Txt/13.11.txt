@@ -1,0 +1,31 @@
+Part 2:
+
+1. Which commands would provide the IP address, network prefix, and interface?
+shpw protocols, show ip route
+
+2. Which commands provide the IP address and interface assignment, but not the network prefix?
+show ip interface brief
+
+3. Which commands provide the status of the interfaces?
+show interfaces, show ip interface brief
+
+4. Which commands provide information about the IOS loaded on the router?
+show version
+
+5. Which commands provide information about the addresses of the router interfaces?
+show arp, show interfaces
+
+6. Which commands provide information about the amount of and Flash memory available?
+show version, show flash
+
+7. Which commands provide information about the lines being used for configuration or device monitoring?
+show users
+
+8. Which commands provide traffic statistics of router interfaces?
+show interfaces
+
+9. Which commands provide information about paths available for network traffic?
+show ip route
+
+10. Which interfaces are currently active on the router?
+GigabitEthernet 0/0, Serial 0/0/1

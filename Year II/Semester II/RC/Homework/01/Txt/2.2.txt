@@ -1,0 +1,24 @@
+Part 1
+
+Step 3
+How can you verify that both passwords were configured correctly?
+Iesim de tot din consola folosind exit, cand vom incerca sa intram din nou ni se va cere prima parola. Dupa ce o introducem, daca scriem enable, ni se va cere a doua parola
+
+Step 5
+Which command do you issue to accomplish this step?
+copy running-config startup-config
+
+Part 2
+
+Step 2
+b. Were you successful? Explain.
+Nu, intrucat switch-urile nu au fost configurate cu un ip
+
+Part 3
+
+Step 1
+If this is the case, why would we configure it with an IP address?
+Avem nevoie sa configuram ip-ul unui switch cand ne conectam de la distanta la acesta
+
+Why do you enter the no shutdown command?
+Aceasta comanda pastreaza interfata intr-o stare activa

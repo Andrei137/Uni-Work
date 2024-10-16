@@ -1,0 +1,59 @@
+Part 1
+
+Step 2
+
+b. 1) How many FastEthernet interfaces does the switch have?
+24
+
+2) How many Gigabit Ethernet interfaces does the switch have?
+2
+
+3) What is the range of values shown for the vty lines?
+0 - 15
+
+4) Which command will display the current contents of non-volatile random-access memory (NVRAM)?
+show startup-config
+
+5) Why does the switch respond with startup-config is not present?
+Momentan nu a fost salvata nici o configuratie in NVRAM
+
+Part 2
+
+Step 2
+Why is the login command required?
+Pentru a cere parola la logare
+
+Step 7
+b. What is displayed for the enable secret password?
+$1$mERr$ILwq/b7kc.7X/ejA4Aosn0
+
+c. Why is the enable secret password displayed differently from what we configured?
+Este criptata
+
+Step 8
+If you configure any more passwords on the switch, will they be displayed in the configuration file as plain text or in encrypted form? Explain.
+O sa fie criptate, intrucat am introdus comanda service password-encryption
+
+Part 3
+
+Step 1
+1) When will this banner be displayed?
+Cand cineva va accesa switch-ul prin portul consola
+
+2) Why should every switch have a MOTD banner?
+Pentru a avertiza persoanele neaturoziate. In cazul in care nu exista un mesaj, acestea se pot simti bine venite!
+
+Part 4
+
+Step 2
+
+What is the shortest, abbreviated version of the copy running-config startup-config command?
+cop r s
+
+Step 3
+
+Which command will display the contents of NVRAM?
+show startup-config
+
+Are all the changes that were entered recorded in the file?
+Da

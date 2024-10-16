@@ -1,0 +1,7 @@
+Reflection Question
+
+Why some FastEthernet ports on the switches are up and others are down?
+Intrucat informatie merge pe cea mai buna cale, iar restul sunt blocate, asteptand sa fie pornite cand se intampla ceva cu prima
+
+What could prevent a ping from being sent between the PCs?
+Asignare gresita de IP-uri, switch oprit, firewall

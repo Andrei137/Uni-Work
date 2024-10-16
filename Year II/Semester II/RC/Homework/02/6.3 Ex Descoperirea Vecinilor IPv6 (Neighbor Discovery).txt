@@ -1,0 +1,81 @@
+Part 1
+
+Step 2
+e. Why are ND PDUs present?
+Intrucat prin acestea se cere adresa MAC a destinatiei
+
+f. Under the OSI Model tab, what is the Message Type listed for ICMPv6
+ICMPv6 Echo Message Type: 128
+
+g.
+What changed in the Layer 3 addressing?
+Adresa destinatiei - FF02::1:FF00:B
+
+What Layer 2 addresses are shown?
+Sursa - 0001.427E.E8ED
+Destinatia - 3333.FF00.000B
+
+h. Is there any difference between the In Layers and Out Layers for Layer 2?
+Nu
+
+i. What addresses are displayed for the following?
+Ethernet II DEST ADDR: 3333.FF00.000B
+Ethernet II SRC ADDR: 0040.0BD2.243E
+IPv6 SRC IP: 2001:DB8:ACAD:1::B 
+IPv6 DST IP: FF02::1:FF00:B 
+
+j. Why are there no Out Layers?
+Adresa IPv6 nu coincide cu adresa router-ului, asadar pachetul este anulat
+
+l. Does PCA1 now have all the necessary information to communicate with PCA2?
+Da, stie adresele IPv6 si MAC ale lui PCA2
+
+m. What is the ICMPv6 Echo Message Type?
+ICMPv6 Echo Message Type: 129
+
+o. Why were there no NDP events?
+PCA1 stie deja adresa MAC a lui PCA2
+
+Part 2
+
+Step 1
+
+f. What address is being used for the Src IP in the inbound PDU?
+FE80::201:42FF:FE7E:E8ED
+
+g. What MAC address is being used for the destination MAC?
+0001.961d.6301
+
+i. What is missing in the outbound Layer 2 information?
+Adresa MAC a destinatiei
+
+m. Were there any NDP events?
+Nu
+
+n.
+What does the destination MAC address correspond to?
+0001.961D.6302 
+
+Why is PCB1 using the router interface MAC address to make its ICMP PDUs?
+Intrucat desinatia este in alta retea
+
+Step 2
+b. 
+How many addresses are listed?
+4
+
+What devices are these addresses associated with?
+PCA1 si PCB1
+
+Are there any entries for PCA2 listed? Explain.
+Nu, intrucat PCA2 nu a comunicat cu nimeni pana acum
+
+d. Are there entries for PCA2?
+Da
+
+Reflection Questions
+1. When does a device require the IPv6 Neighbor Discovery process?
+Cand nu se cunoaste adresa MAC
+
+2. How does a router help to minimize the amount of IPv6 Neighbor Discovery traffic on a network?
+Router-ul pastreaza adresele pentru a nu se face cereri ND pentru fiecare destinatie

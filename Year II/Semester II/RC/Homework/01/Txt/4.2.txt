@@ -1,0 +1,17 @@
+Part 5
+
+Step 1
+c. How many wires are connected to the switch in the blue rack?
+2, unul coaxial si unul copper straight-through
+
+Step 2
+a. What is located on the table to the right of the blue rack?
+Configuration Terminal
+
+Step 3
+b. Why are there two orange cables connected to each device?
+Intrucat unul este pentru a transmite informatia, iar celalalt pentru a o primi
+
+Step 4
+Why is there no rack to hold the equipment?
+Intrucat Home Network este client, nu serviciu

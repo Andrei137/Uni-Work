@@ -1,0 +1,104 @@
+Part 1
+
+Step 7
+b.
+What is this called?
+multiplexare
+
+A variety of PDUs appears in the event list in the Simulation Panel. What is the meaning of the different colors?
+Protocoale diferite
+
+Part 2
+
+Step 1
+d. Why did it take so long for the HTTP PDU to appear?
+Intrucat TCP trebuie mai intai sa stabileasca conexiunea
+
+e. 
+What is the section labeled?
+TCP
+
+Are these communications considered to be reliable?
+Da
+
+Record the SRC PORT, DEST PORT, SEQUENCE NUM, and ACK NUM values.
+SRC PORT = 1026
+DEST PORT = 80
+SEQUENCE NUM = 1
+ACK NUM = 1
+
+f. Which TCP flags are set in this PDU?
+ACK si PSH
+
+h. How are the port and sequence numbers different than before?
+Sursa si destinatia s-au inversat, SEQUENCE NUM este 1, iar ACK NUM este 103
+
+i. What information is now listed in the TCP section? How are the port and sequence numbers different from the previous two PDUs?
+Sursa si destinatia s-au inversat, SEQUENCE NUM este 103, iar ACK NUM este 234
+
+Step 2
+c. Are these communications considered to be reliable?
+Da
+
+d. 
+Record the SRC PORT, DEST PORT, SEQUENCE NUM, and ACK NUM values
+1026, 21, 0, 0
+
+What is the value in the flag field?
+SYN
+
+f. How are the port and sequence numbers different than before?
+21, 1026, 0, 1
+
+g. How are the port and sequence numbers different from the previous results?
+1026, 21, 1, 1
+
+i. What is the message from the server?
+Welcome to PT Ftp server 
+
+Step 3
+
+d.
+What is the Layer 4 protocol?
+UDP
+
+Are these communications considered to be reliable?
+Nu
+
+e.
+Record the SRC PORT and DEST PORT values.
+1026, 53
+
+Why are there no sequence and acknowledgement numbers?
+UDP nu are nevoie de o conexiune sigura
+
+g.
+How are the port and sequence numbers different than before?
+Sursa si destinatia sunt inversate
+
+What is the last section of the PDU called? What is the IP address for the name multiserver.pt.ptu?
+DNS Answer, 192.168.1.254
+
+Step 4
+d.
+What transport layer protocol does email traffic use?
+TCP
+
+Are these communications considered to be reliable?
+Da
+
+e. Record the SRC PORT, DEST PORT, SEQUENCE NUM, and ACK NUM values. What is the flag field value?
+1026, 25, 0, 0, SYN
+
+g. How are the port and sequence numbers different than before?
+Sursa si destinatia sunt inversate, iar ACK NUM este 1
+
+h. How are the port and sequence numbers different from the previous two results?
+Sursa si destinatia sunt inversate, iar SEQUENCE NUM si ACK NUM sunt 1
+
+i.
+How are the port and sequence numbers different from the previous two PDUs?
+1026, 25, 1, 1
+
+What email protocol is associated with TCP port 25? What protocol is associated with TCP port 110?
+SMTP, POP3

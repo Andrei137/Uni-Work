@@ -1,0 +1,41 @@
+Part 1
+
+Step 1
+b. Which management ports are available?
+Porturile AUX si CONSOLE
+
+Step 2
+a. Which LAN and WAN interfaces are available on the East router and how many are there?
+Exista 2 interfete WAN, sub textul 'HWIC', si 2 interfete LAN (Gigabit Ethernet), cele cu galben
+
+b. How many physical interfaces are listed?
+4, si anume GigabitEthernet0/0, GigabitEthernet0/1, Serial0/0/0 si Serial0/0/1
+
+c. What is the default bandwidth of this interface? (gigabitethernet 0/0)
+1000000 Kbit
+
+What is the default bandwidth of this interface? (serial 0/0/0)
+1544 Kbit
+
+Step 3
+How many expansion slots are available to add additional modules to the East router?
+Unul, sub butonul de On/Off
+
+Click Switch2 or Switch3. How many expansion slots are available?
+5 (numarul de patrate negre + cele acoperite de un cover)
+
+Part 2
+
+Step 1
+a. 1) You need to connect PCs 1, 2, and 3 to the East router, but you do not have the necessary funds to purchase a new switch. Which module can you use to connect the three PCs to the East router?
+Modulul HWIC-4ESW
+
+a. 2) How many hosts can you connect to the router using this module?
+4, dupa cum spune in specificatii
+
+b. Click Switch2. Which module can you insert to provide a Gigabit optical connection to Switch3?
+Modulul PT-SWITCH-NM-1FGE
+
+Step 2
+d. Use the show ip interface brief command to identify the slot in which the module was placed. Into which slot was it inserted?
+GigabitEthernet5/1

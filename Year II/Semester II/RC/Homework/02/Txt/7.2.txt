@@ -1,0 +1,55 @@
+Part 1
+
+Step 2
+b. 
+What is the router’s hostname?
+Router 
+
+How many Fast Ethernet interfaces does the Router have?
+4
+
+How many Gigabit Ethernet interfaces does the Router have?
+2
+
+How many Serial interfaces does the router have?
+2
+
+What is the range of values shown for the vty lines?
+0-4
+
+c. Why does the router respond with the startup-config is not present message?
+Intrucat configuratia nu a fost salvata inca in NVRAM
+
+Part 2
+
+Step 2
+c. If you are not prompted for a password before reaching the user EXEC prompt, what console line command did you forget to configure?
+R1(config-line)#login
+
+d. 
+Why would the enable secret password allow access to the privileged EXEC mode and the enable password no longer be valid?
+Parola setata "enable secret" este mai puternica, asadar aceasta este folosita in cazul in care se introduc ambele 
+
+If you configure any more passwords on the router, are they displayed in the configuration file as plain text or in encrypted form? Explain.
+Sunt encriptate, intrucat "service password-encryption" encripteaza toate parolele curente si viitoare
+
+Part 3
+
+Step 1
+a.
+What command did you enter to save the configuration to NVRAM?
+copy running-config startup-config
+
+What is the shortest, unambiguous version of this command?
+cop r st
+
+Step2 
+a.
+How many files are currently stored in flash?
+3
+
+Which of these files would you guess is the IOS image?
+c1900-universalk9-mz.SPA.151-4.M4.bin
+
+Why do you think this file is the IOS image?
+Celelalte doua file sunt de tip xml si au length mult mai mic

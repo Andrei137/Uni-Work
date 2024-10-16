@@ -1,0 +1,80 @@
+Part 1
+
+Step 1
+a. Which command displays the statistics for all interfaces configured on a router?
+show interfaces
+
+b. Which command displays the information about the Serial 0/0/0 interface only?
+show interface serial 0/0/0 
+
+c. 1) What is the IP address configured on R1?
+209.165.200.225/30
+
+c. 2) What is the bandwidth on the Serial 0/0/0 interface?
+1544 Kbit
+
+d. 1) What is the IP address on R1?
+R1 nu are o adresa IP configurata
+
+d. 2) What is the MAC address of the GigabitEthernet 0/0 interface?
+000d.bd6c.7d01
+
+d. 3) What is the bandwidth (BW) of the GigabitEthernet 0/0 interface?
+1000000 Kbit
+
+Step 2
+a. Which command displays a brief summary of the current interfaces, interface status, and the IP addresses assigned to them?
+show ip interface brief
+
+b. 1) How many serial interfaces are there on R1 and R2?
+Fiecare are cate 2
+
+b. 2) How many Ethernet interfaces are there on R1 and R2?
+R1 are 6, iar R2 are 2
+
+b. 3) Are all the Ethernet interfaces on R1 the same? If no, explain the difference(s).
+Nu, sunt 4 interfete FastEthernet si 2 interfete GigabitEthernet. Cele Gigabit au viteze de 1000000 kbit, iar cele Fast au viteze de 100000 kbit
+
+Step 3
+a. What command displays the contents of the routing table?
+show ip route
+
+b. 1) How many connected routes are there (uses the C code)?
+1
+
+b. 2) Which route is listed?
+209.165.200.224/30
+
+b. 3) How does a router handle a packet destined for a network that is not listed in the routing table?
+Un router va trimite pachetul catre reteaua din tabela. Daca aceasta nu exista, pachetul va fi anulat
+
+Part 2
+
+Step 3
+Save the configuration files on both routers to NVRAM. What command did you use?
+copy running-config startup-config
+
+Part 3
+
+Step 1
+a.
+How many interfaces on R1 and R2 are configured with IP addresses and in the “up” and “up” state?
+Cate 3 pentru fiecare router
+
+What part of the interface configuration is NOT displayed in the command output?
+Subnet mask
+
+What commands can you use to verify this part of the configuration?
+"show run", "show interfaces" si "show ip protocols"
+
+b. 1) How many connected routes (uses the C code) do you see on each router?
+Cate 3 pentru fiecare router
+
+b. 2) How many OSPF routes (uses the O code) do you see on each router?
+2
+
+b. 3) If the router knows all the routes in the network, then the number of connected routes and dynamically learned routes (OSPF) should equal the total number of LANs and WANs. How many LANs and WANs are in the topology?
+5
+
+b. 4) Does this number match the number of C and O routes shown in the routing table?
+da

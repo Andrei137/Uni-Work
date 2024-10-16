@@ -1,0 +1,111 @@
+Step 1
+b.
+Ping to default gateway (172.16.1.1)?
+Da
+
+To web server (209.165.201.2)?
+Da
+
+Ping to PC-02?
+Da
+
+To PC-A?
+Nu
+
+To PC-B?
+Nu
+
+c.
+Can PC-01 access www.cisco.pka?
+Da
+
+Using the web server IP address?
+Da
+
+d. 
+Adresa IP a lui PC-01 era gresita.
+Solutie: Modificarea adresei IP a lui PC-01
+
+Step 2
+b.
+Ping to default gateway (172.16.1.1)?
+Da
+
+To web server (209.165.201.2)?
+Da
+
+Ping to PC-01?
+Da
+
+To PC-A?
+Nu
+
+To PC-B?
+Nu
+
+c.
+Can PC-02 access www.cisco.pka?
+Da
+
+Using the web server IP address?
+Da
+
+d.
+Default Gateway-ul lui PC-02 era gresit.
+Solutie: Modificarea Default Gateway-ului lui PC-02
+
+Step 3
+b.
+Ping to default gateway (172.16.2.1)?
+Nu
+
+To web server (209.165.201.2)?
+Nu
+
+Ping to PC-B?
+Da
+
+To PC-01?
+Nu
+
+To PC-02?
+Nu
+
+c.
+Can PC-A access www.cisco.pka?
+Nu
+
+Using the web server IP address
+Nu
+
+d.
+Interfata Gigabit 0/1 a lui R1 era configurata cu un IP gresit
+Solutie: Configurarea corecta a interfetei Gigabit 0/1 a lui R1
+
+Step 4
+b.
+Ping to default gateway (172.16.2.1)?
+Da
+
+To web server (209.165.201.2)?
+Da
+
+Ping to PC-B?
+Da
+
+To PC-01?
+Da
+
+To PC-02?
+Da
+
+c.
+Can PC-A access www.cisco.pka?
+Nu
+
+Using the web server IP address
+Da
+
+d.
+Serverul este configurat gresit
+Solutie: Sunt necesare permisiuni administrative pentru a modifica configuratia Serverului

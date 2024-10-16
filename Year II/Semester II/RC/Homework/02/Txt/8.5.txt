@@ -1,0 +1,91 @@
+Part 1
+
+Step 1
+How many host addresses are available in a /25 network?
+2^7 - 2 = 126
+
+What is the total number of host addresses needed in the topology diagram?
+80
+
+How many subnets are needed in the network topology?
+6
+
+Step 2
+What is the subnet description (e.g. BR1 LAN or BR1-BR2 link)?
+BR1 LAN
+
+How many IP addresses are required in the largest subnet?
+40
+
+What subnet mask can support that many host addresses?
+255.255.255.192
+
+How many total host addresses can that subnet mask support?
+62
+
+Can you subnet the 192.168.33.128/25 network address to support this subnet?
+Da
+
+What are the network addresses that would result from this subnetting?
+192.168.33.128/26 si 192.168.33.192/26
+
+Step 3
+What is the subnet description?
+BR2 LAN
+
+How many IP addresses are required for the second largest subnet?
+25
+
+What subnet mask can support that many host addresses?
+255.255.255.224
+
+How many total host addresses can that subnet mask support?
+30
+
+Can you subnet the remaining subnet again and still support this subnet?
+Da
+
+What are the network addresses that would result from this subnetting?
+192.168.33.192/27 si 192.168.33.224/27
+
+Step 4
+What is the subnet description?
+BR2 IoT LAN
+
+How many IP addresses are required for the next largest subnet?
+5
+
+What subnet mask can support that many host addresses?
+255.255.255.248
+
+How many total host addresses can that subnet mask support?
+6
+
+Can you subnet the remaining subnet again and still support this subnet?
+Da
+
+What are the network addresses that would result from this subnetting?
+192.168.33.224/29, 192.168.33.232/29, 192.168.33.240/29, si 192.168.33.248/29
+
+Step 5
+What is the subnet description?
+BR1-BR2 Link
+
+How many IP addresses are required for the next largest subnet?
+2
+
+What subnet mask can support that many host addresses?
+255.255.255.252
+
+How many total host addresses can that subnet mask support?
+2
+
+Can you subnet the remaining subnet again and still support this subnet?
+Da
+
+What are the network addresses that would result from this subnetting?
+192.168.33.248/30 si 192.168.33.252/30
+
+Reflection Question
+Can you think of a shortcut for calculating the network addresses of consecutive /30 subnets?
+N.A.-ul trecut + 4

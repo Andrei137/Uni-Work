@@ -1,0 +1,13 @@
+Part 1
+What are the subcategories for Network Devices?
+Routers, Switches, Hubs, Wireless Devices, Security si WAN Emulation
+
+Part 2
+d. What devices use a wired connection to connect to switch ALS2?
+ALS1, Access_Point (se observa in tab-ul Logical) si WebServer
+
+e. Which device is connected to Access_Point?
+Laptop_1
+
+f. Where is the device connected to Access_Point physically located?
+Laptop_1 se afla pe masa, la dreapta lui PC_1

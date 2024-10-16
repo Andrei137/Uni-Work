@@ -1,0 +1,40 @@
+Part 2
+
+Step 1
+c. Why were the pings not successful?
+Intrucat router-ul nu a fost inca configurat
+
+Step 2
+n. Were the pings successful? Explain.
+Da, intrucat router-ul a fost configurat.
+
+Part 3
+
+Step 1
+a.
+What code is used in the routing table to indicate a directly connected network?
+C
+
+How many route entries are coded with a C code in the routing table?
+2
+
+What interface types are associated to the C coded routes? 
+GigabitEthernet0/0/0 si GigabitEthernet0/0/1
+
+Step 2
+a.
+What is the operational status of the G0/0/1 interface?
+up
+
+What is the Media Access Control (MAC) address of the G0/1 interface?
+0060.4731.8102
+
+How is the internet address displayed in this command?
+Internet address is 192.168.1.1/24
+
+Reflection Questions
+1. If the G0/0/1 interface showed that it was administratively down, what interface configuration command would you use to bring the interface up?
+R1(config-if)#no shutdown
+
+2. What would happen if you had incorrectly configured interface G0/0/1 on the router with an IP address of 192.168.1.2?
+PC-A nu ar putea da ping catre PC-B

@@ -1,0 +1,118 @@
+Part 1
+
+Step 1
+c. What is the IPv4 address and default gateway for your device?
+IPv4: 192.168.5.8
+Default Gateway: 192.168.5.1
+
+Step 2
+What is the IPv4 address for your router?
+10.10.24.170
+
+Step 3
+d. On your device, use one of the "what is my ip" websites you found in your search. List your public IPv4 address, location, and ISP.
+IPv4: 86.126.95.62
+ISP: RCS & RDS S.A.
+City: Bucharest
+Region: Bucuresti
+Country: Romania
+
+
+Step 4
+a. What does the connection look like between your device and your router? Is it wired or wireless?
+Este wireless, dar ma pot conecta si cu fir
+
+b. Where is the router that your device uses to access the internet?
+Pe holul etajului 5 de la camin
+ 
+c. What does the connection look like between your router and the internet? Does it use a cable from the cable company or the phone company? Is it wireless? Can you find the cable as it leaves your house or see the remote tower if it is a wireless connection?
+Conexiunea este wireless, iar turnul remote se afla in afara caminului
+
+Part 2
+
+Step 2
+d. In your own network, what is the technology for the local loop you are using? Cable? DSL? Satellite? Cellular? If it is a wired connection, see if you can find the cable leaving your home network. Where does it go? To a telephone pole? Underground?
+Cablu, pe sub pamant
+
+e. What is the IP address for your ISP's POP
+10.192.57.129
+
+Step 3
+2nd Hop IPv4 address: 10.192.57.129
+ISP: RCS & RDS S.A.
+City: Bucharest
+Region: Bucuresti
+Country: Romania
+
+Step 5
+c. What is the IPv4 address of the 3rd hop in the Packet Tracer traceroute output?
+10.110.178.133
+
+d. Which router and interface in the monterey.ca building is configured with this IPv4 address?
+rur02.monterey.ca.sfba.comcast.net, interfata GigabitEthernet0/0
+
+e. What is the IPv4 address of the 4th hop in the Packet Tracer traceroute output?
+10.139.198.129
+
+f. Which router and interface in the monterey.ca building is configured with this IPv4 address?
+rur01.monterey.ca.sfba.comcast.net, interfata GigabitEthernet0/0
+
+g. Why do you think the IP addresses for the other interfaces are not shown in the traceroute output?
+Sunt rutate catre alte locatii
+
+h. List the hops in your own traceroute output that belong to your local ISP.
+10.220.142.90, 10.220.142.8
+
+Step 6
+a. What information, if any, can you decipher from the domain names for your local ISP?
+static-10-220-142-90.rdsnet.ro si static-10-220-142-8.rdsnet.ro sunt din Romania
+
+d. Investigate each building, router, and interface to complete the following table.
+5 rar01.santaclara.ca.sfba.comcast.net  GigabitEthenet0/0   10.151.78.177
+6 cs03.sunnyvale.ca.ibone.comcast.net   GigabitEthenet0/0   10.110.41.121
+7 cr12.sunnyvale.ca.ibone.comcast.net   GigabitEthenet0/0   10.110.46.30
+8 cr01.9greatoaks.ca.ibone.comcast.net  GigabitEthenet0/0   10.110.37.178
+9 pe11.9greatoaks.ca.ibone.comcast.net  GigabitEthenet0/0   10.110.32.246
+
+e. What is the building, router, interface, and IPv4 address for the outbound link to Los Angeles?
+Cladire: greatoaks.calibone
+Router: rtsw.sunn.net.internet2.edu GigabitEthernet1/0
+IPv4: 172.16.20.254
+
+Step 7
+d. What is the interface for the 10th hop?
+GigabitEthernet0/0
+
+Step 8
+Search for the Wikipedia information and other web sites to get more information about Internet2. What speed is the Internet backbone that provides connections between its members?
+Internet2 ofera 100 Gbit/s (Wikipedia, sectiunea Obiective)
+
+Step 9
+c. What is the interface used for this 11th hop in the traceroute output?
+GigabitEthernet0/0
+
+Step 10
+a. How many submarine cables terminate at Hermosa Beach?
+Link: https://www.submarinecablemap.com/landing-point/hermosa-beach-ca-united-states
+3 cabluri: Asia Connect Cable-1 (ACC-1), JUPITER si SEA-US
+
+b. What is the name of the submarine cable that runs from Hermosa Beach to Hawaii?
+SEA-US
+
+c. What is the name of the landing point in Hawaii?
+Makaha
+
+d. How many submarine cables terminate at this landing point in Hawaii?
+Link: https://www.submarinecablemap.com/landing-point/makaha-hi-united-states
+4 cabluri: Hawaii Island Fibre Network (HIFN), Japan-U.S. S1 (JUS-S1), Paniolo Cable Network si SEA-US
+
+g. Search the internet to find how many kilometers separate each repeater on a submarine cable.
+Link: https://www.fujitsu.com/global/documents/about/resources/publications/fstj/archives/vol35-1/paper05.pdf, pg 36, cap 2.2
+Intre 40 si 90 km
+
+i. What interface is assigned to the 12th hop?
+GigabitEthernet0/0
+
+Step 11
+What interface is assigned to the 13th hop?
+GigabitEthernet0/0

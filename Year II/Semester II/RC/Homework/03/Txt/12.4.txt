@@ -1,0 +1,7 @@
+Part 2
+
+b. What changes were made?
+Configuratia din TFTP Server a fost incarcata pe router
+
+c. Are all interfaces active?
+Nu, G0/1 este down

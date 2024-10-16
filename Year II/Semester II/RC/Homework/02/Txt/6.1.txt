@@ -1,0 +1,72 @@
+Part 1
+
+Step 1
+d.
+Is this address listed in the table above?
+Nu
+
+How many copies of the PDU did Switch1 make?
+3
+
+What is the IP address of the device that accepted the PDU?
+172.16.31.3
+
+e. What happened to the source and destination MAC addresses?
+FFFF.FFFF.FFFF a devenit adresa MAC a lui 172.16.31.3
+
+f. How many copies of the PDU did the switch make during the ARP reply?
+1
+
+Step 2
+a. Do the MAC addresses of the source and destination align with their IP addresses?
+Da
+
+c.
+To what IP address does the MAC address entry correspond?
+172.16.31.3
+
+In general, when does an end device issue an ARP request?
+Cand nu stie adresa MAC a destinatiei.
+
+Part 2
+
+Step 1
+c. How many replies were sent and received?
+4 trimise, 4 primite
+
+Step 2
+a. Do the entries correspond to those in the table above?
+Da
+
+b.
+Do the entries correspond to those in the table above?
+Da
+
+Why are two MAC addresses associated with one port?
+Intrucat cele doua device-uri sunt conectate la Access Point printr-un singur port
+
+Part 3
+
+Step 1
+c. What is the IP address of the new ARP table entry?
+172.16.31.1
+
+e. How many PDUs appear?
+2
+
+f. What is the target destination IP destination address of the ARP request?
+172.16.31.1
+
+g. Why?
+
+Step 2
+
+b. How many MAC addresses are in the table? Why?
+0, intrucat comanda nu face acelasi lucru rulata dintr-un router
+
+c.
+Is there an entry for 172.16.31.2?
+Da
+
+What happens to the first ping in a situation where the router responds to the ARP request?
+Da "time out"

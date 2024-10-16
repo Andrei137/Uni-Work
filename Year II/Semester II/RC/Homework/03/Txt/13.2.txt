@@ -1,0 +1,51 @@
+Part 1
+
+Step 2
+a. What is the last successful IPv4 address that was reached?
+10.10.1.97
+
+c. What is the last successful IPv4 address that was reached
+10.10.1.17
+
+f. What is the other?
+10.10.1.6
+
+g. What are they?
+10.10.1.4/30 si 10.10.1.6/32
+
+h. Repeat step 2e to 2g with R3 and the answers here
+10.10.1.10; 10.10.1.8/30, 10.10.1.10/32
+
+Step 3
+a. What is the error?
+IP-ul lui R2 in Serial 0/0/0 este configurat gresit
+
+b. What solution would you propose to correct the problem?
+Modificarea Ip-ului din interfata Serial 0/0/0 a lui R2
+
+Step 4
+b. Is the problem resolved?
+Da
+
+Part 2
+
+Step 2
+a. What is the last successful IPv6 address that was reached?
+2001:DB8:1:3::2
+
+c.What is the last successful IPv6 address that was reached?
+Nu apare nici un IP
+
+d. Is there a discrepancy?
+Da
+
+Step 3
+a. What is the error?
+Default Gateway-ul lui PC4 este gresit
+
+b. What solution would you propose to correct the problem?
+Modificarea Default Gateway-ului lui PC4
+
+Steo 5
+b. Is the problem resolved?
+Da

@@ -1,0 +1,54 @@
+Step 1
+List the intermediary device categories.
+Routers, Switches, Hubs, Wireless Devices, Security si WAN Emulation
+
+Without entering into the internet cloud or intranet cloud, how many icons in the topology represent endpoint devices (only one connection leading to them)?
+15
+
+Without counting the two clouds, how many icons in the topology represent intermediary devices (multiple connections leading to them)?
+11
+
+How many end devices are not desktop computers?
+8 = 15 - numarul de PC-uri = 15 - 7
+
+How many different types of media connections are used in this network topology?
+4
+
+Step2
+a. In Packet Tracer, only the Server-PT device can act as a server. Desktop or Laptop PCs cannot act as a server. Based on your studies so far, explain the client-server model.
+Un host poate fi atat un client, cat si un server. Clientii fac request-uri catre server, iar acesta raspunde la ele, fiind configurat pentru a face acest lucru
+
+b. List at least two functions of intermediary devices.
+Pot redirectiona datele in cazul in care apare o eroare in vreuna dintre conexiuni
+Permit sau restrictioneaza accesul la date, in functie de setarile de securitate aplicate asupra acestora
+
+c. List at least two criteria for choosing a network media type.
+Distanta pe care o acopera acesta, viteza acestuia, cat si pretul, in special raportul pret-calitate
+
+Step 3
+a. Explain the difference between a LAN and a WAN. Give examples of each.
+LAN (Local Area Network) ofera permite comunicarea in zone restranse, precum o casa.
+WAN (Wide Area Network) permite comunicarea pe distante lungi, cum ar fi internetul.
+
+b. In the Packet Tracer network, how many WANs do you see?
+2: Intranet si Internet
+
+c. How many LANs do you see?
+3: Central, Home Office si Branch
+
+d. The internet in this Packet Tracer network is overly simplified and does not represent the structure and form of the real internet. Briefly describe the internet.
+Internetul reprezinta milioane de retele interconectate, ce permite comunicarea si schimbul de informatii intre utilizatori din intreaga lume
+
+e. What are some of the common ways a home user connects to the internet?
+Cablu, fibra, DSL
+
+f. What are some common methods that businesses use to connect to the internet in your area?
+Cablu, satelit
+
+Challenge Question
+
+What else does this device need to send data to other end users?
+Trebuie sa ii asignam ip-uri
+
+What else does this device need to serve as an intermediary to other devices in the network?
+Trebuie sa il configuram cu ajutorul unui SERVICE

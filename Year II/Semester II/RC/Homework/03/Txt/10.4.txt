@@ -1,0 +1,24 @@
+Part 1
+
+Step 2
+Ping-urile au fost cu success doar in interfata G0/0/0 a ISP-ului
+
+Part 4
+
+Step 1
+g. What ICMP error messages did you receive?
+Request timed out.
+
+Step 2
+b. What is the IP address used?
+209.165.200.226
+
+Reflection Questions
+1. What could prevent ping or traceroute responses from reaching the originating device beside network connectivity issues?
+Firewall, delay
+
+2. If you ping a non-existent address on the remote network, such as 209.165.200.227, what is the message displayed by the ping command? What does this mean? If you ping a valid host address and receive this response, what should you check?
+Request timed out. Acest mesaj indica ca nu a fost dat nici un raspuns. Ar trebui inspectat router-ul
+
+3. If you ping an address that does not exist in any network in your topology, such as 192.168.5.3, from a Windows-based PC, what is the message displayed by the ping command? What does this message indicate?
+Destination host unreachable. Acest mesaj indica ca nu este nici o ruta catre destinatie.

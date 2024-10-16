@@ -1,0 +1,72 @@
+------- Solutie -------
+
+Stare curenta:
+3 misionari, 3 canibali | 0 misionari, 0 canibali
+Barca se afla pe malul stang
+
+Pas 1: Barca s-a deplasat de pe malul stang pe malul drept cu 0 misionari si 2 canibali
+
+Stare curenta:
+3 misionari, 1 canibal | 0 misionari, 2 canibali
+Barca se afla pe malul drept
+
+Pas 2: Barca s-a deplasat de pe malul drept pe malul stang cu 0 misionari si 1 canibal
+
+Stare curenta:
+3 misionari, 2 canibali | 0 misionari, 1 canibal
+Barca se afla pe malul stang
+
+Pas 3: Barca s-a deplasat de pe malul stang pe malul drept cu 0 misionari si 2 canibali
+
+Stare curenta:
+3 misionari, 0 canibali | 0 misionari, 3 canibali
+Barca se afla pe malul drept
+
+Pas 4: Barca s-a deplasat de pe malul drept pe malul stang cu 0 misionari si 1 canibal
+
+Stare curenta:
+3 misionari, 1 canibal | 0 misionari, 2 canibali
+Barca se afla pe malul stang
+
+Pas 5: Barca s-a deplasat de pe malul stang pe malul drept cu 2 misionari si 0 canibali
+
+Stare curenta:
+1 misionar, 1 canibal | 2 misionari, 2 canibali
+Barca se afla pe malul drept
+
+Pas 6: Barca s-a deplasat de pe malul drept pe malul stang cu 1 misionar si 1 canibal
+
+Stare curenta:
+2 misionari, 2 canibali | 1 misionar, 1 canibal
+Barca se afla pe malul stang
+
+Pas 7: Barca s-a deplasat de pe malul stang pe malul drept cu 2 misionari si 0 canibali
+
+Stare curenta:
+0 misionari, 2 canibali | 3 misionari, 1 canibal
+Barca se afla pe malul drept
+
+Pas 8: Barca s-a deplasat de pe malul drept pe malul stang cu 0 misionari si 1 canibal
+
+Stare curenta:
+0 misionari, 3 canibali | 3 misionari, 0 canibali
+Barca se afla pe malul stang
+
+Pas 9: Barca s-a deplasat de pe malul stang pe malul drept cu 0 misionari si 2 canibali
+
+Stare curenta:
+0 misionari, 1 canibal | 3 misionari, 2 canibali
+Barca se afla pe malul drept
+
+Pas 10: Barca s-a deplasat de pe malul drept pe malul stang cu 0 misionari si 1 canibal
+
+Stare curenta:
+0 misionari, 2 canibali | 3 misionari, 1 canibal
+Barca se afla pe malul stang
+
+Pas 11: Barca s-a deplasat de pe malul stang pe malul drept cu 0 misionari si 2 canibali
+
+Stare curenta:
+0 misionari, 0 canibali | 3 misionari, 3 canibali
+Barca se afla pe malul drept
+

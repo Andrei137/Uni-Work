@@ -1,0 +1,35 @@
+Part 1
+
+Step 2
+DNS Serverul lui PC1 este gresit
+
+Step 3
+Modificarea DNS Serverul lui PC1
+
+Step 5
+a. Did it solve the problem?
+Da
+
+Part 2
+
+Step 2
+Ipv6 Gateway-ul lui DualStackServer.pka este gresit
+
+Step 3
+Modificarea Ipv6 Gateway-ul lui DualStackServer.pka
+
+Step 5
+a. Did it solve the problem?
+Da
+
+Part 3
+
+Step 2
+Default Gateway-ul lui PC1 este gresit
+
+Step 3
+Modificarea Default Gateway-ul lui PC1
+
+Step 5
+a. Did it solve the problem?
+Da

@@ -1,0 +1,10 @@
+Part 1
+
+Step 2
+1. Default Gateway-ul PC-ului nu este setat
+2. Default Gateway-ul Switch-ului nu este setat
+
+Part 4
+
+Am modificat Default Gateway-ul la PC si Switch
+Am schimbat starile interfetelor Gigabit 0/0/1 din Router si FastEthernet 0/5 din Switch in up

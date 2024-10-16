@@ -1,0 +1,38 @@
+Part 1
+
+Step 1
+How many subnets are needed in the network topology?
+5
+
+Step 2
+a.
+Which subnet mask will accommodate the number of IP addresses required for ASW-1?
+255.255.255.240
+
+How many usable host addresses will this subnet support?
+14 (10.11.48.97 - 10.11.48.110)
+
+b.
+Which subnet mask will accommodate the number of IP addresses required for ASW-2?
+255.255.255.224
+
+How many usable host addresses will this subnet support?
+30 (10.11.48.65 - 10.11.48.94)
+
+c.
+Which subnet mask will accommodate the number of IP addresses required for ASW-3?
+255.255.255.248
+
+How many usable host addresses will this subnet support?
+6 (10.11.48.113 - 10.11.48.118)
+
+d.
+Which subnet mask will accommodate the number of IP addresses required for ASW-4?
+255.255.255.192
+
+How many usable host addresses will this subnet support?
+62 (10.11.48.1 - 10.11.48.62)
+
+e.
+Which subnet mask will accommodate the number of IP addresses required for the connection between Building1 and Building2?
+255.255.255.252

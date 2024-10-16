@@ -1,0 +1,72 @@
+Part 1
+
+Step 2
+b. What is the setting for bits per second?
+9600
+
+c. What is the prompt displayed on the screen?
+S1>
+
+Step 3
+a. Which command begins with the letter ‘C’?
+connect
+
+Which commands are displayed? (t?)
+telnet, terminal si tracercute
+
+Which commands are displayed? (te?)
+telnet si terminal
+
+Part 2
+
+Step 1
+a. What information is displayed for the enable command?
+Turn on privileged commands
+
+b. What displays after pressing the Tab key?
+enable
+
+What would happen if you typed te<Tab> at the prompt?
+Nimic, intrucat exista 2 cuvinte cheie care incep cu te
+
+c. How does the prompt change?
+In loc de S1> avem S1#, adica am intrat in modul cu privilegii
+
+d. How many commands are displayed now that privileged EXEC mode is active?
+5: clear, clock, configure, connect si copy
+
+Step 2
+a. What is the message that is displayed?
+Configuring from terminal, memory, or network [terminal]?
+
+b. How does the prompt change?
+In loc de S1# avem S1(config)#, intrucat am intrat in modul global
+
+Part 3
+
+Step 1
+a. What information is displayed? What is the year that is displayed?
+*7:11:2.624 UTC Mon Mar 1 1993
+
+b. What information is displayed?
+% Incomplete command
+
+c. What information is displayed?
+set    Set the time and date
+
+d. What information is being requested?
+hh:mm:ss  Current Time
+
+What would have been displayed if only the clock set command had been entered, and no request for help was made by using the question mark?
+% Incomplete command
+
+Step 2
+b. Issue the following commands and record the messages
+
+% Ambiguous command: "cl"
+
+% Incomplete command.
+
+% Invalid input detected at '^' marker.
+
+% Invalid input detected at '^' marker.

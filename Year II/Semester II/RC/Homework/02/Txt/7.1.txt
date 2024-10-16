@@ -1,0 +1,63 @@
+Reflection Questions
+
+1. Were there different types of cables/media used to connect devices?
+Da, wireless si cabluri de cupru si fibra
+
+2. Did the cables change the handling of the PDU in any way?
+Nu
+
+3. Did the Hub lose any of the information that it received?
+Nu
+
+4. What does the Hub do with MAC addresses and IP addresses?
+Nimic
+
+5. Did the wireless Access Point do anything with the information given to it?
+A trimis pachetul mai departe catre cele 2 device-uri conectate prin wireless
+
+6. Was any MAC or IP address lost during the wireless transfer?
+Nu
+
+7. What was the highest OSI layer that the Hub and Access Point used?
+1
+
+8. Did the Hub or Access Point ever replicate a PDU that was rejected with a red “X”?
+Da
+
+9. When examining the PDU Details tab, which MAC address appeared first, the source or the destination?
+Destinatia
+
+10. Why would the MAC addresses appear in this order?
+Un switch poate trimite mai repede un frame catre o adresa MAC daca primeste destinatia inainte
+
+11. Was there a pattern to the MAC addressing in the simulation?
+Da, se schimba la final
+
+12. Did the switches ever replicate a PDU that was rejected with a red “X”?
+Nu
+
+13. Every time that the PDU was sent between the 10 network and the 172 network, there was a point where the 
+MAC addresses suddenly changed. Where did that occur?
+La router
+
+14. Which device uses MAC addresses that start with 00D0:BA?
+10.10.10.2
+
+15. What devices did the other MAC addresses belong to?
+Switch-urile
+
+16. Did the sending and receiving IPv4 addresses change fields in any of the PDUs?
+Da, la final
+
+17. When you follow the reply to a ping, sometimes called a pong, do you see the sending and receiving IPv4 
+addresses switch?
+Nu
+
+18. What is the pattern to the IPv4 addressing used in this simulation?
+IP-ul este trimis mai departe catre switch sau router
+
+19. Why do different IP networks need to be assigned to different ports of a router?
+Intrucat cu ajutorul router-ului interconectam diverse retele, si nu putem folosi acelasi port pentru mai multe retele. 
+
+20. If this simulation was configured with IPv6 instead of IPv4, what would be different?
+Adresele IP (sursa si destinatie)

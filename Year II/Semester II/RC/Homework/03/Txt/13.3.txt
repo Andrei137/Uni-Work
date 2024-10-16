@@ -1,0 +1,35 @@
+Part 1
+
+Step 1
+What message is displayed as a result of the ping?
+Destination host unreachable
+
+Step 2
+b. What was the first IP address listed in the tracert output?
+10.0.0.254
+
+c. What is the last address reached with the tracert command?
+10.100.100.6
+
+Step 3
+What devices have addresses configured for the network where the failure occurred?
+RouterB si RouterC
+
+a. What is the status of the interfaces?
+up
+
+b. Does there appear to be anything extraordinary?
+Adresa interfetei Serial 0/0/0 este configurata gresit
+
+c. What is solution?
+Modificarea adresei din interfata Serial 0/0/0
+
+Step 4
+b. Was the command successful?
+Da
+
+Part 2
+b. Did the command complete successfully?
+
+c. What is noticeably different about the list of addresses returned?
+traceroute afiseaza o adresa IP in minus

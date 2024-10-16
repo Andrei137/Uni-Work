@@ -1,0 +1,69 @@
+Part 1
+
+Step 2
+
+d. Did anything change?
+Pagina web a fost returnata de catre serverul web
+
+Step 3
+b. What is the text displayed next to the Layer 7 label?
+HTTP
+
+What information is listed in the numbered steps directly below the In Layers and Out Layers boxes?
+1. The HTTP client sends a HTTP request to the server.
+
+c. What is the Dst Port value?
+80
+
+d. What is the Dest. IP value?
+192.168.1.254
+
+e. What information is displayed at this layer?
+Layer 2 Ethernet II Header 0060.47CA.4DEE >> 0001.96A9.401D
+
+f. What is the common information listed under the IP section of PDU Details as compared to the information listed under the OSI Model tab? With which layer is it associated?
+SRC IP si DST IP, la Layer-ul 3
+
+What is the common information listed under the TCP section of PDU Details, as compared to the information listed under the OSI Model tab, and with which layer is it associated?
+SRC PORT si DEST PORT, la Layer-ul 4
+
+What is the Host listed under the HTTP section of the PDU Details? What layer would this information be associated with under the OSI Model tab?
+www.osi.local, la Layer-ul 7
+
+h. Comparing the information displayed in the In Layers column with that of the Out Layers column, what are the major differences?
+Porturile si IP-urile sursa si destinatie difera, precum si adresele MAC de la Layer-ul 2
+
+i. What is the first line in the HTTP message that displays?
+HTTP Data:Connection: close
+
+j. Click the last colored square box under the Info column. How many tabs are displayed with this event and why?
+Doar 2, unul pentru modelul OSI, si celalalt pentru detalii despre Inbound PDU, intrucat ultimul event doar primeste raspunsul la request
+
+Part 2
+
+Step 1
+b. What additional Event Types are displayed?
+DNS, ARP si TCP
+
+d. Click the Outbound PDU Details tab. What information is listed in the NAME: in the DNS QUERY section?
+www.osi.local
+
+e. Which device is displayed?
+Web Client
+
+What is the value listed next to ADDRESS: in the DNS ANSWER section of the Inbound PDU Details?
+192.168.1.254 
+
+f. In the numbered list directly below the In Layers and Out Layers, what is the information displayed under items 4 and 5?
+4. The TCP connection is successful.
+5. The device sets the connection state to ESTABLISHED.
+
+g. What is the purpose of this event, based on the information provided in the last item in the list (should be item 4)?
+Sa inchida conexiunea
+
+Challenge
+Based on the information that was inspected during the Packet Tracer capture, what port number is the Web Server listening on for the web request?
+Primul request HTTP arata portul 80 destinatie in Layout-ul 4
+
+What port is the Web Server listening on for a DNS request?
+Primul request DNS arata portul 53 destinatie in Layout-ul 4
