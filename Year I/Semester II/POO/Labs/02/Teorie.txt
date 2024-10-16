@@ -1,0 +1,9 @@
+1. constructor de copiere
+- transmitere prin valoare : void f(cls ob)
+- la initializare : cls ob2(ob1)
+- la return de functie : cls f() 
+- in lista de initializare : cls2(cls& ob) : ob_(ob){}
+2. op = 
+- cand facem atribuiri
+- atribuiri inalntuite
+- obiectul deja exista

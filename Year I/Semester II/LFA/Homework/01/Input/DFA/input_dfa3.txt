@@ -1,0 +1,47 @@
+3
+0 1 2
+30
+0 0 a
+0 0 d
+0 0 g
+0 0 j
+0 1 b
+0 1 e
+0 1 h
+0 2 c
+0 2 f
+0 2 i
+1 0 c
+1 0 f
+1 0 i
+1 1 a
+1 1 d
+1 1 g
+1 1 j
+1 2 b
+1 2 e
+1 2 h
+2 0 b
+2 0 e
+2 0 h
+2 1 c
+2 1 f
+2 1 i
+2 2 a
+2 2 d
+2 2 g
+2 2 j
+0
+1
+0
+10
+bcd
+eeb
+bacd
+bajh
+fgedcc
+bcdef
+jabd
+jj
+bjacib
+bccb

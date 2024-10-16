@@ -1,0 +1,22 @@
+Multime 1 : 0
+Multime 2 : 12
+Multime 3 : 34
+Multime 4 : 5
+Multime 5 : 6
+
+
+Graph[0][a] = 12
+Graph[0][b] = 34
+
+Graph[12][a] = 34
+Graph[12][b] = 12
+
+Graph[34][a] = 6
+Graph[34][b] = 5
+
+Graph[6][a] = 34
+Graph[6][b] = 5
+
+Graph[5][a] = 6
+Graph[5][b] = 12
+

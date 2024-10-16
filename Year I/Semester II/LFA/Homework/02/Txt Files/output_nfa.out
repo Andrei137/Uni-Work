@@ -1,0 +1,9 @@
+Graph[4][x] = 48
+Graph[4][y] = 4
+
+Graph[48][x] = 1148
+Graph[48][y] = 48
+
+Graph[1148][x] = 1148
+Graph[1148][y] = 1148
+

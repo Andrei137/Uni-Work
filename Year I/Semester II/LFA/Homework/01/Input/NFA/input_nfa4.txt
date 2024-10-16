@@ -1,0 +1,19 @@
+5
+0 1 2 3 4
+8
+0 0 a
+0 0 b
+0 1 a
+1 2 b
+2 3 a
+3 4 b
+4 4 a
+4 4 b
+0
+1
+4
+4
+abab
+bbababaaa
+abbaabba
+abbaabbabab

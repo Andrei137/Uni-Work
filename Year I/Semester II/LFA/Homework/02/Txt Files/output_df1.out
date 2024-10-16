@@ -1,0 +1,18 @@
+Multime 1 : AC
+Multime 2 : B
+Multime 3 : D
+Multime 4 : E
+
+
+Graph[AC][a] = B
+Graph[AC][b] = AC
+
+Graph[B][a] = B
+Graph[B][b] = D
+
+Graph[D][a] = B
+Graph[D][b] = E
+
+Graph[E][a] = B
+Graph[E][b] = AC
+
