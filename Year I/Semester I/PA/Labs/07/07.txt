@@ -1,0 +1,15 @@
+Fie S[1 ... N] sirul de caractere
+
+a)
+is_pal[i][j] = (i <= j) consideram subsecventa S[i ... j], este ea palindrom?
+
+is_pal[i][j] = true, daca S[i] == S[j] si is_pal[i + 1][j - 1] == true
+is_pal[i][i] = true
+is_pal[i][i + 1] = true, daca S[i] == S[i + 1]
+is_pal[i][j] = false, altfel
+
+b)
+dp[i] = numarul minim de palindromuri in care se poate imparti prefixul S[1 ... i]
+
+dp[0] = 0
+dp[i] = 1 + min(dp[j], j < i si is_pal[j + 1][i] == true)

@@ -1,0 +1,14 @@
+Fie lista activitatilor, act[i] = (S[i], F[i], C[i])
+S[i] = inceputul
+F[i] = finalul
+
+Pasul 1 este sa ordonam spectacolele crescator dupa F[i]
+
+dp[i] = costul maxim al unei submultimi de activitati din primele i, a.i. ultima activitate considerata este activitatea i
+
+dp[i] = C[i] + max(dp[j], 0 <= j <= i - 1, F[j] <= S[i])
+
+T[i] = acel j pentru care dp[j] = dp[i] - C[i] si F[j] <= S[i] si 0 <= j <= i - 1
+Cu ajutorul lui T reconstruim solutia
+
+Solutia se afla in max(dp[i]), pentru i de la 1 la N

@@ -1,0 +1,2 @@
+na : [ana, masina]
+re : [are, mare, mere, negre, pere]

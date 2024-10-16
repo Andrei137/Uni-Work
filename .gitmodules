@@ -1,0 +1,36 @@
+[submodule "Year I/Semester I/ASC/Project"]
+	path = Year I/Semester I/ASC/Project
+	url = https://github.com/Andrei137/Wordle-ASC-Project.git
+[submodule "Year I/Semester II/BD/Project"]
+	path = Year I/Semester II/BD/Project
+	url = https://github.com/Andrei137/Database-Project.git
+[submodule "Year I/Semester II/POO/Project"]
+	path = Year I/Semester II/POO/Project
+	url = https://github.com/Andrei137/Tic-Tac-Toe.git
+[submodule "Year I/Semester II/TW/Project"]
+	path = Year I/Semester II/TW/Project
+	url = https://github.com/Andrei137/The-Entertainment-Hub.git
+[submodule "Year II/Semester I/DAW/Project"]
+	path = Year II/Semester I/DAW/Project
+	url = https://github.com/Andrei137/DragonsLegacy.git
+[submodule "Year II/Semester II/SGBD/Project"]
+    path = Year II/Semester II/SGBD/Project
+    url = https://github.com/Andrei137/DBMS-Project.git
+[submodule "Year II/Semester I/SO/Project"]
+	path = Year II/Semester I/SO/Project
+	url = https://github.com/Andrei137/Flesh.git
+[submodule "Year II/Semester II/AA/Project"]
+	path = Year II/Semester II/AA/Project
+	url = https://github.com/Andrei137/Genetic-Algorithms.git
+[submodule "Year II/Semester II/IA/KR/Project"]
+	path = Year II/Semester II/IA/KR/Project
+	url = https://github.com/Andrei137/Dots-and-Boxes.git
+[submodule "Year II/Semester II/MDS/Project"]
+	path = Year II/Semester II/MDS/Project
+	url = https://github.com/Andrei137/MediaMaster.git
+[submodule "Year II/Semester II/PAO/Project"]
+	path = Year II/Semester II/PAO/Project
+	url = https://github.com/Andrei137/GameMaster.git
+[submodule "Year II/Semester II/RC/Project"]
+	path = Year II/Semester II/RC/Project
+	url = https://github.com/curs-retele-2024/proiect-retele-2024-inner-shell

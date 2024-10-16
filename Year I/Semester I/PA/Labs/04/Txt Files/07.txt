@@ -1,0 +1,2 @@
+Txt Files/negative_pozitive.txt : 2 
+Txt Files/triplete_pitagorice.txt : 1 2 

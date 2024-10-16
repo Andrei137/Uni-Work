@@ -1,0 +1,14 @@
+consideram s[1 ... N] si t[1 ... M]
+
+dp[i][j] = cel mai lung subsir comun al prefixului s[1 ... i] si prefixului t[1 ... j]
+
+dp[i][j] = 1 + dp[i - 1][j - 1] daca s[i] == t[j]
+dp[i][j] = max(dp[i - 1][j], dp[i][j - 1]), altfel
+
+T[i][j] = {1, 2, 3}
+
+T[i][j] = 1, daca s[i] == t[j]
+T[i][j] = 2, daca dp[i - 1][j] > dp[i][j - 1]
+T[i][j] = 3, altfel
+
+solutia problemei initiale se afla in dp[N][M]

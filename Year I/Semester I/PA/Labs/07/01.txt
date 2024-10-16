@@ -1,0 +1,20 @@
+fie multimea pieselor p, unde p[i] este un tuplu cu doua elemente
+
+dp[i] = lungimea celui mai lung subsir de domino-uri care are ca ultim element piesa i
+O sa potrivim a i-a piesa peste o piesa aflata in intervalul [0, ..., i - 1], astfel adaugand-o la subsirul ce se termina in aceasta. Dintre toate posibilitatile, vom dori sa adaugam piesa peste un subsir cat se poate de mare
+
+piesa i se va adauga la un subsir care se termina intr-un j
+
+dp[0] = 0
+si orice i se potriveste peste 0, (in zero "se termina" multimea vida)
+dp[i] = 1 + max(dp[j], pentru 0 <= j <= i - 1 si p[j][1] == p[i][0])
+
+cnt[i] = numarul de subsiruri maximale care au ca ultim element pe i
+
+t[i] = cu cine s-a imperecheat piesa i
+t[i] = acel j pentru care dp[j] = dp[i] - 1 si p[j][1] == p[i][0] si 0 <= j <= i - 1
+
+
+cnt[0] = 1
+cnt[i] = sum(cnt[j], unde 0 <= j <= i - 1, dp[j] == dp[i] - 1 si p[j][1] == p[i][0])
+

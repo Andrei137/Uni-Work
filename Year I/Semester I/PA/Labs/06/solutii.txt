@@ -1,0 +1,65 @@
+Laborator 6
+
+4)
+Sir A de lungime N >= 3, exista o pozitie p a.i. A[1] < A[2] < ... < A[p] > A[p + 1] > ... > A[N]
+
+trebuie sa gasim o pozitie X a.i A[X - 1] < A[X] < A[X + 1]
+X se afla in intervalul [2, N - 1]
+
+Folosim cautare binara
+
+daca avem o pozitie q, ne putem da seama daca ea se afla in stanga lui x sau in dreapta lui x.
+daca A[q - 1] < A[q] < A[q + 1], X se afla in dreapta
+daca A[q - 1] > A[q] > A[q + 1], X se afla in stanga
+daca A[q - 1] < A[q] > A[q + 1], X este egal cu q
+
+left, right = 2, N - 1
+while left <= right:
+    m = (left + right) // 2
+    if A[mid - 1] < A[mid] < A[mid + 1]:
+        left = mid + 1
+    elif A[mid - 1] > A[mid] > A[mid + 1]:
+        right = mid - 1
+    else:
+        print(mid)
+        break
+
+5)
+fie A o matrice de dimensiune 2 ** n linii 2 ** n coloane
+
+n = 2
+A = [[0 for _ in range(2 ** n)] for _ in range(2 ** n)]
+
+
+def parcurge(A, l0, c0, l1, c1, offset):
+    if l0 == l1 and c0 == c1:
+        A[l0][c0] = offset
+        return
+    mid_l = (l0 + l1) // 2
+    mid_c = (c0 + c1) // 2
+
+    dim_submatrice = (mid_l - l0 + 1) * (mid_c - c0 + 1)
+
+    parcurge(A, l0, mid_c + 1, mid_l, c1, offset)
+    parcurge(A, mid_l + 1, c0, l1, mid_c, offset + dim_submatrice)
+    parcurge(A, l0, c0, mid_l, mid_c, offset + 2 * dim_submatrice)
+    parcurge(A, mid_l + 1, mid_c + 1, l1, c1, offset + 3 * dim_submatrice)
+
+
+parcurge(A, 0, 0, 2 ** n - 1, 2 ** n - 1, 1)
+
+print(*A, sep='\n')
+
+7)
+Se dau doi vectori ordonati crescator. Sa se gaseasca valoarea care s-ar afla pe pozitia K daca cei doi s-ar interclasa.
+Exista solutie in O(log N + log M)
+
+A[m1] < B[m2]
+
+1) K <= m1 + m2 - 1
+solutia se poate afla oriunde in A, sau in prima jumatate a lui B
+Am injumatatit dimensiunea lui B
+2) K > m1 + m2 - 1
+solutia se poate afla in jumatatile din dreapta ale lui A si B
+din K scadem m1 + m2 - 1
+si cautam in jumatatile din dreapta
