@@ -28,11 +28,12 @@
 - [Programare Avansata Pe Obiecte](https://github.com/Andrei137/Uni-Work/tree/main/Year%20II/Semester%20II/PAO)
 - [Retele De Calculatoare](https://github.com/Andrei137/Uni-Work/tree/main/Year%20II/Semester%20II/RC)
 
-# Year III
-### Semester I
+# [Year III](https://github.com/Andrei137/Uni-Work/tree/main/Year%20III)
+### [Semester I](https://github.com/Andrei137/Uni-Work/tree/main/Year%20III/Semester%20I)
 - [Grafica Pe Calculator](https://github.com/Andrei137/Uni-Work/tree/main/Year%20III/Semester%20I/Grafica)
 - [Inginerie Software](https://github.com/Andrei137/Uni-Work/tree/main/Year%20III/Semester%20I/IS)
 - [Nodejs](https://github.com/Andrei137/Uni-Work/tree/main/Year%20III/Semester%20I/Nodejs)
 - [Sisteme Distribuite](https://github.com/Andrei137/Uni-Work/tree/main/Year%20III/Semester%20I/SD/Labs)
-### Semester II
+
+### [Semester II](https://github.com/Andrei137/Uni-Work/tree/main/Year%20III/Semester%20II)
 - [Bachelor](https://github.com/Andrei137/Bachelor-Thesis)
