@@ -1,0 +1,17 @@
+meta {
+  name: Update Book
+  type: http
+  seq: 4
+}
+
+put {
+  url: http://localhost:8080/book/2
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "title": "Parry Hotter"
+  }
+}

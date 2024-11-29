@@ -34,3 +34,24 @@
 [submodule "Year II/Semester II/RC/Project"]
 	path = Year II/Semester II/RC/Project
 	url = https://github.com/curs-retele-2024/proiect-retele-2024-inner-shell
+[submodule "Year III/Semester I/Grafica/Projects/CueQuest"]
+	path = Year III/Semester I/Grafica/Projects/CueQuest
+	url = https://github.com/Andrei137/CueQuest.git
+[submodule "Year III/Semester I/IS/MediaMaster"]
+	path = Year III/Semester I/IS/MediaMaster
+	url = https://github.com/unibuc-cs/software-engineering-product-panic-driven-development
+[submodule "Year III/Semester II/Bachelor"]
+	path = Year III/Semester II/Bachelor
+	url = https://github.com/Andrei137/Bachelor-Thesis
+[submodule "Year III/Semester I/Nodejs/Homework/01"]
+	path = Year III/Semester I/Nodejs/Homework/01
+	url = https://github.com/arnia-unibuc/lab-1-basic-js-Andrei137
+[submodule "Year III/Semester I/Nodejs/Homework/02"]
+	path = Year III/Semester I/Nodejs/Homework/02
+	url = https://github.com/arnia-unibuc/lab-2-express-js-Andrei137
+[submodule "Year III/Semester I/Nodejs/Homework/03"]
+	path = Year III/Semester I/Nodejs/Homework/03
+	url = https://github.com/arnia-unibuc/lab-3-rest-architecture-Andrei137
+[submodule "Year III/Semester I/Nodejs/Homework/04"]
+	path = Year III/Semester I/Nodejs/Homework/04
+	url = https://github.com/arnia-unibuc/lab-4-graphql-Andrei137

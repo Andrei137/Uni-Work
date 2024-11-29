@@ -1,0 +1,6 @@
+Avem urmatoarele emailuri:
+nume1-nume2.prenume@s.unibuc.ro
+john.doe@google.com
+jane.doe@facebook.org
+elon.mask.meta.com
+acesta.nu.este.un.mail@test
