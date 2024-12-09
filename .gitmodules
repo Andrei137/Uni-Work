@@ -55,3 +55,9 @@
 [submodule "Year III/Semester I/Nodejs/Homework/04"]
 	path = Year III/Semester I/Nodejs/Homework/04
 	url = https://github.com/arnia-unibuc/lab-4-graphql-Andrei137
+[submodule "Year III/Semester I/Nodejs/Project"]
+	path = Year III/Semester I/Nodejs/Project
+	url = https://github.com/Andrei137/Abur
+[submodule "Year III/Semester I/SD/Homework/01/App"]
+	path = Year III/Semester I/SD/Homework/01/App
+	url = https://github.com/Andrei137/Client-Server-App
