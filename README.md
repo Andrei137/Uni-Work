@@ -33,7 +33,7 @@
 - [Grafica Pe Calculator](https://github.com/Andrei137/Uni-Work/tree/main/Year%20III/Semester%20I/Grafica)
 - [Inginerie Software](https://github.com/Andrei137/Uni-Work/tree/main/Year%20III/Semester%20I/IS)
 - [Nodejs](https://github.com/Andrei137/Uni-Work/tree/main/Year%20III/Semester%20I/Nodejs)
-- [Sisteme Distribuite](https://github.com/Andrei137/Uni-Work/tree/main/Year%20III/Semester%20I/SD/Labs)
+- [Sisteme Distribuite](https://github.com/Andrei137/Uni-Work/tree/main/Year%20III/Semester%20I/SD)
 
 ### [Semester II](https://github.com/Andrei137/Uni-Work/tree/main/Year%20III/Semester%20II)
 - [Bachelor](https://github.com/Andrei137/Bachelor-Thesis)
