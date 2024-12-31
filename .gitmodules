@@ -61,3 +61,9 @@
 [submodule "Year III/Semester I/SD/Homework/01/App"]
 	path = Year III/Semester I/SD/Homework/01/App
 	url = https://github.com/Andrei137/Client-Server-App
+[submodule "Year III/Semester I/SD/Homework/02/App"]
+	path = Year III/Semester I/SD/Homework/02/App
+	url = https://github.com/Andrei137/Functional-Go
+[submodule "Year III/Semester I/Grafica/Projects/ChristmasSpirit"]
+	path = Year III/Semester I/Grafica/Projects/ChristmasSpirit
+	url = https://github.com/Andrei137/ChristmasSpirit

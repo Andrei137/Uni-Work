@@ -1,11 +1,11 @@
 import {GraphQLObjectType, GraphQLInt, GraphQLString} from 'graphql'
 
-const userType = new GraphQLObjectType({
-    name: 'User',
+const tagType = new GraphQLObjectType({
+    name: 'Tag',
     fields: {
         id: { type: GraphQLInt },
-        name: { type: GraphQLString },
+        name: { type: GraphQLString }
     }
 });
 
-export default userType;
+export default tagType;

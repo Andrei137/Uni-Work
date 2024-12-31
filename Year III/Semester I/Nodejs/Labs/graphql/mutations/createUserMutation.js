@@ -1,22 +1,26 @@
-import { GraphQLBoolean } from 'graphql';
 import userInputType from '../types/userInputType.js';
-import { createEntity } from '../../fakeDb.js';
+import db from '../../models/index.js';
+import userType from '../types/userType.js';
+import bcrypt from 'bcrypt';
 
-const createUserMutationResolver = (_, args, context) => {
-  const isAuthorized = !!context.user_id;
-  if (isAuthorized) {
-    createEntity('users', args.user);
-    return true;
-  }
-  return false;
-};
+const createUserMutationResolver = async (_, { user }, context) => {
+    const password = await bcrypt.hash(user.password, 5);
+
+    const createdUser = await db.User.create({
+        name: user.name,
+        password: password,
+    });
+
+    return createdUser;
+    
+}
 
 const createUserMutation = {
-  type: GraphQLBoolean,
-  args: {
-    user: { type: userInputType }
-  },
-  resolve: createUserMutationResolver
+    type: userType,
+    args: {
+        user: {type: userInputType},
+    },
+    resolve: createUserMutationResolver,
 };
 
 export default createUserMutation;

@@ -1,21 +1,35 @@
-import { GraphQLInt } from 'graphql';
+import graphql from 'graphql';
 import userInputType from '../types/userInputType.js';
-import { findEntity, updateEntity } from '../../fakeDb.js';
 import userType from '../types/userType.js';
+import db from '../../models/index.js';
 
-const updateUserMutationResolver = (_, args) => {
-  const { id, user } = args;
-  updateEntity('users', id, user);
-  return findEntity('users', id);
-};
+const updateUserMutationResolver = async (_, args) => {
+    const id = args.id;
+
+    const user = await db.User.findOne({
+        where: {
+            id,
+        }
+    });
+
+    if(!user) {
+        return false;
+    }
+
+    const updatedUser = await user.update({
+        ...args.user,
+    });
+
+    return updatedUser;
+}
 
 const updateUserMutation = {
-  type: userType,
-  args: {
-    user: { type: userInputType },
-    id: { type: GraphQLInt }
-  },
-  resolve: updateUserMutationResolver
+    type: userType,
+    args: {
+        id: {type: graphql.GraphQLInt},
+        user: {type: userInputType},
+    },
+    resolve: updateUserMutationResolver,
 };
 
 export default updateUserMutation;
