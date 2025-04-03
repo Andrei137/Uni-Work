@@ -1,0 +1,27 @@
+1.
+A - 4
+B - 6
+C - 1
+D - 3
+E - 2
+F - 5
+
+2.
+Email neoficial ING
+Continut gresit gramatical si neprofesional
+Email marcat automat ca junk
+Titlu nesugestiv
+
+3.
+SBF (Sender Policy Framework)
+- controleaza cine are voie sa trimita email-uri
+
+DKM (DomainKeys Identified Mail)
+- se asigura ca continutul email-ului ramane de incredere si nu a fost modificat/compromis
+
+DMARC (Domain-based Message Authentication, Reporting and Conformance)
+- Combina SBF si DKM pentru a defini o politica de protectie improtiva email-urilor malitioase
+
+Ce beneficii ati obtine daca atacul ar fi cu succes?
+Accesul la detalii personale sensibile (parole, adrese, IBAN-uri, CNP)
+Accesul la diverse conturi

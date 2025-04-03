@@ -1,0 +1,73 @@
+1.1.
+OneTime Pad este un sistem de criptare perfect sigur daca este folosit corect.
+
+1.2.
+Observam ca textul dat are lungimea 104 in Base64, in timp ce textul criptat de la ex 1 are lungimea 108, asadar nu putem cripta cu OTP.
+Putem insa sa adaugam un spatiu la finalul textului, pentru a ajunge la lungime 108.
+Pentru acest text, putem face xor cu textul criptat de la ex 1 pentru a obtine cheia.
+Cheia este ecad8de748ef0b1a857f032101bdb51f5e07c3c37931c37b3c3219ef748215708cf046a18588c1e2f897ca0076ca7f924eb1e6efcb1b905afed5d110228d24049b8242bec6e11d82699409fa1281d7
+
+1.3.
+Daca avem lungimi diferite, se pierde informatie la criptare/decriptare
+Daca atacatorul stie mesajul clar si criptat, atunci stie cheia, cu care poate decripta orice alt text criptat care foloseste acea cheie
+
+2.1
+Un sistem istoric de criptare ce foloseste metoda substitutiei este Cifrul lui Cezar.
+Criptarea presupune deplasarea circulara la dreapta cu un numar K al fiecarei litere
+Decriptarea implica opusul criptarii, si anume deplasarea inapoi, la stanga, cu acelasi numar K
+
+Exemplu criptare:
+text clar: Ana are mere!
+cheie: 4
+text criptat: Ere evi qivi!
+
+Exemplu decriptare:
+text criptat: Ere evi qivi!
+cheie: 4
+text decriptat: Ana are mere!
+
+Criptanaliza: Cifrul este destul de usor de spart, avand doar 25 de chei, asadar poate fi folosita forta bruta. Problema este sa ne dam seama ca textul a fost encriptat cu acest cifru. Un posibil indiciu este faptul ca textul va pastra exact aceeasi structura ca cel original, fiind o mapare "statica"
+
+2.2
+Un sistem istoric de criptare ce foloseste metoda transpozitiei este Cifrul Rail Fence
+Critparea presupune scrierea in zig-zag a propozitiei, urmand ca noul text sa fie cuvintele de pe fiecare linie, concatenate
+Decriptarea implica construirea matricii pe baza textului encriptat si parcurgerea acestuia in zig-zag pentru a obtine textul clar
+
+Exemplu criptare:
+text clar: Ana are mere!
+cheie: 4
+text criptat: Ae!nr eaamr e
+
+Exemplu decriptare:
+text criptat: Ae!nr eaamr e
+cheie: 4
+text decriptat: Ana are mere!
+
+Criptanaliza: Cheia poate avea valori intre 2 si lungimea textului, asadar se poate folosi forta bruta intr-un timp rezonabil
+
+3.
+Observam ca cele mai des intalnite litere sunt J, E, G, W si M.
+"GDJ" apare de 17 ori
+"EWK" apare de 15 ori
+"EOJ" apare de 2 ori
+Acestea 3 ar putea fi "THE", "ARE" sau "AND", de unde am deduce ca
+E ar putea fi A si J ar putea fi E, deci
+O ar fi R, W ar fi N, K ar fi D, G ar fi T si D ar fi H
+Asadar top 4 litere ar fi E, A, T si N, ceea ce pare o mapare decenta, primele 2 fiind chiar top 2, iar toate 4 fiind top 7
+-- Pt observatiile de mai jos, am rulat decriptarea cu fiecare set de litere nou desceoprite
+-> Apare de 3 ori "THEV", care probabil este "THEY", deci V ar putea fi Y si "HAUE", care probabil este "HAVE", asadar U ar putea fi V
+-> "LEEN" din "AND HAVE LEEN THE" poate fi "BEEN" sau "SEEN", insa faptul ca avem si "LE" ne sugereaza ca L ar fi B, nu S, iar "THEHR" este "THEIR", asadar H este I
+-> Din "THEIR INVENTIMN IN 1978" se vede usor ca M este O, iar din "AND THEIR ESTENDED", S este X
+-> Din "THEY HAVE AT ONFE BEEN" se vede usor ca F este C, din "IN THE ENCAINR YEARC" avem C este S si din "THEY BERE BORN" avem B este W
+-> Din "AND HAVE BEEN THE SABXECT OY NAPEROAS DIVORCES" se vede ca A este U, X este J, Y este F si P este M
+-> Din "ARE THE WORNDS MOST FAMOUS CRYQTORRAQHIC COUQNE" se vede ca N este L, Q este P si R este G
+-> Din "HOW PUBLIC TEY CRYPTOGRAPHY WORT" avem T este K, din "I.DUPONT AND A.CATTAPAN" (avand in vedere numele Quinn Dupont) avem I este Q, iar ultimul ramas este Z, care ramane Z
+
+4.1.
+Ziua 1 mai 1941
+https://64.media.tumblr.com/2436ccb9e6dba7f6e5d99e684a77560f/tumblr_o6dd84f3jc1s580z8o1_500.jpg
+Cheia
+V I IV | 16 12 25 | AU BY CH DQ EF IO JN KL MR PW | WZA HGK FOB FGM
+
+4.5.
+Un text criptat care nu ar fi putut fi criptarea numelui ANDREI este ZWDQLX, deoarece a treia litera este egala, ceea nu este posibil in enigma pentru literele conectate (in cazul lui D, DQ)

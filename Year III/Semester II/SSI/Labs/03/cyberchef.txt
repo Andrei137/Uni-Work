@@ -1,0 +1,21 @@
+1.1.
+Rezolvare
+    https://gchq.github.io/CyberChef/#recipe=From_Base64('A-Za-z0-9%2B/%3D',true,false)XOR(%7B'option':'Hex','string':'ecb181a479a6121add5b42264db9b44b4b48d7d93c62c56a3c3e1aba64c7517a90ed44f8919484b6ed8acc4670db62c249b9f5bada4ed474c9e4d111308b614788cd4fbdc1e949c1629e12fa5fdbd9'%7D,'Standard',false)&input=bzkva2hDM1BmMy85Q3lOQ2JkekhQeTVvb3JjY0Vhd1pTRnQzbWdDaWNSbmloRFNNOE9iaGxwM3Z2aUFWdUJiaU90Q1N6Nmh1c0JXcWhmRjBRLzhFWis2aUk5S3lnRDNoQWZGZ256eXY5dz09&ieol=CRLF&oeol=VT
+
+1.2.
+Lungime text clar
+    https://gchq.github.io/CyberChef/#recipe=To_Base64('A-Za-z0-9%2B/%3D')&input=T3JpY2UgdGV4dCBjbGFyIHBvYXRlIG9idGludXQgZGludHItdW4gdGV4dCBjcmlwdGF0IGN1IE9UUCBkYXIgY3UgYWx0YSBjaGVpZS4u
+Lungime text criptat
+    https://gchq.github.io/CyberChef/#recipe=To_Base64('A-Za-z0-9%2B/%3D')&input=T25lVGltZSBQYWQgZXN0ZSB1biBzaXN0ZW0gZGUgY3JpcHRhcmUgcGVyZmVjdCBzaWd1ciBkYWNhIGVzdGUgZm9sb3NpdCBjb3JlY3QuCg
+Lungime text clar + spatiu
+    https://gchq.github.io/CyberChef/#recipe=To_Base64('A-Za-z0-9%2B/%3D')&input=T3JpY2UgdGV4dCBjbGFyIHBvYXRlIG9idGludXQgZGludHItdW4gdGV4dCBjcmlwdGF0IGN1IE9UUCBkYXIgY3UgYWx0YSBjaGVpZS4uIA&ieol=CRLF&oeol=CR
+Rezolvare:
+    https://gchq.github.io/CyberChef/#recipe=From_Base64('A-Za-z0-9%2B/%3D',true,false)XOR(%7B'option':'UTF8','string':'Orice%20text%20clar%20poate%20obtinut%20dintr-un%20text%20criptat%20cu%20OTP%20dar%20cu%20alta%20cheie..%20'%7D,'Standard',false)To_Hex('None',0)&input=bzkva2hDM1BmMy85Q3lOQ2JkekhQeTVvb3JjY0Vhd1pTRnQzbWdDaWNSbmloRFNNOE9iaGxwM3Z2aUFWdUJiaU90Q1N6Nmh1c0JXcWhmRjBRCi84RVorNmlJOUt5Z0QzaEFmRmduenl2OXc9PQ&ieol=CRLF&oeol=CR
+Verificare:
+    https://gchq.github.io/CyberChef/#recipe=From_Base64('A-Za-z0-9%2B/%3D',true,false)XOR(%7B'option':'Hex','string':'ecad8de748ef0b1a857f032101bdb51f5e07c3c37931c37b3c3219ef748215708cf046a18588c1e2f897ca0076ca7f924eb1e6efcb1b905afed5d110228d24049b8242bec6e11d82699409fa1281d7'%7D,'Standard',false)&input=bzkva2hDM1BmMy85Q3lOQ2JkekhQeTVvb3JjY0Vhd1pTRnQzbWdDaWNSbmloRFNNOE9iaGxwM3Z2aUFWdUJiaU90Q1N6Nmh1c0JXcWhmRjBRLzhFWis2aUk5S3lnRDNoQWZGZ256eXY5dz09&ieol=CRLF&oeol=VT
+
+1.3.
+Cheia in HEX pt textul clar cu lugnime 104
+    https://gchq.github.io/CyberChef/#recipe=From_Base64('A-Za-z0-9%2B/%3D',true,false)XOR(%7B'option':'UTF8','string':'Orice%20text%20clar%20poate%20obtinut%20dintr-un%20text%20criptat%20cu%20OTP%20dar%20cu%20alta%20cheie..'%7D,'Standard',false)To_Hex('None',0)&input=bzkva2hDM1BmMy85Q3lOQ2JkekhQeTVvb3JjY0Vhd1pTRnQzbWdDaWNSbmloRFNNOE9iaGxwM3Z2aUFWdUJiaU90Q1N6Nmh1c0JXcWhmRjBRCi84RVorNmlJOUt5Z0QzaEFmRmduenl2OXc9PQ&ieol=CRLF&oeol=CR
+Decriptarea folosind aceasta cheie
+    https://gchq.github.io/CyberChef/#recipe=From_Base64('A-Za-z0-9%2B/%3D',true,false)XOR(%7B'option':'Hex','string':'ecad8de748ef0b1a857f032101bdb51f5e07c3c37931c37b3c3219ef748215708cf046a18588c1e2f897ca0076ca7f924eb1e6efcb1b905afed5d110228d24049b8242bec6e11d82699409fa1281b8'%7D,'Standard',false)&input=bzkva2hDM1BmMy85Q3lOQ2JkekhQeTVvb3JjY0Vhd1pTRnQzbWdDaWNSbmloRFNNOE9iaGxwM3Z2aUFWdUJiaU90Q1N6Nmh1c0JXcWhmRjBRLzhFWis2aUk5S3lnRDNoQWZGZ256eXY5dz09&ieol=CRLF&oeol=VT

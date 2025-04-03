@@ -1,0 +1,55 @@
+1.
+Candidatul 1: Dupa primul seed, returneaza doar 0
+Candidatul 2: Se poate identifica relativ usor formula, generarea fiind crescatoare
+Candidatul 3: Mereu returneaza acelasi numar, seed / 4
+
+2.1.
+Folosit pentru generarea de parole sigure pentru resetarea contului/utilizatori noi
+
+2.2.
+Folosit ca identificator unic pentru r
+esurse (pt REST API de ex, unde id-ul apare in url)
+
+2.3.
+Folosit pentru autentificarea bazata pe token-uri
+
+2.6.
+Evitarea stocarii parolelor in text clar, ingreunand descifrarea acestora in caz de atac
+
+3.
+CWE Random Numbers Issues: https://cwe.mitre.org/data/definitions/1213.html
+
+Codul Java:
+CWE-335
+    - Incorrect Usage of Seeds in Pseudo-Random Number Generator
+    - https://cwe.mitre.org/data/definitions/335.html
+CWE-336
+    - Same Seed in Pseudo-Random Number Generator
+    - https://cwe.mitre.org/data/definitions/336.html
+
+Codul PHP:
+CWE-331
+    - Insufficient Entropy
+    - https://cwe.mitre.org/data/definitions/331.html
+CWE-341
+    - Predictable from Observable State
+    - https://cwe.mitre.org/data/definitions/341.html
+
+Daca spatial de valori random posibile este mic
+CWE-334
+    - Small Space of Random Values
+    - https://cwe.mitre.org/data/definitions/334.html
+Atacul
+    - https://capec.mitre.org/data/slices/333.html
+    - "If the secret was chosen algorithmically, cryptanalysis can be applied to the algorithm to discover patterns in this algorithm. (This is true even if the secret is not used in cryptography.) Periodicity, the need for seed values, or weaknesses in the generator all can result in a significantly smaller secret space."
+
+CWE-331
+    - Insufficient Entropy
+    - https://cwe.mitre.org/data/definitions/331.html
+    - CVE: https://www.cve.org/CVERecord?id=CVE-2024-6508
+CWE-338
+    - Use of Cryptographically Weak Pseudo-Random Number Generator (PRNG)
+    - https://cwe.mitre.org/data/definitions/338.html
+    - CVE: https://www.cve.org/CVERecord?id=CVE-2024-45723
+
+8 vulnerabilitati legate de PRNG: https://www.cve.org/CVERecord/SearchResults?query=prng (01.04.2025)

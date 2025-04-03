@@ -1,0 +1,31 @@
+1.
+A - 3
+B - 1
+C - 5
+D - 2
+E - 4
+
+3.
+4 + 10 = 14 -> 1110 -> 14
+AA76 -> 1010 1010 0111 0110 -> AA76
+
+4.
+ANDREI -> 65 78 68 82 69 73
+66 82 65 86 79 -> BRAVO
+
+5.
+ANDREI -> QU5EUkVJ
+U3VudCBzdHVkZW50IGxhIEZNSS4= -> Sunt student la FMI.
+
+6.
+malware - orice forma de software menita sa deterioreze sau sa se infiltreze intr-un calculator
+virus - un tip de malware care se ataseaza altor programe si, la rulare, se autoreplica
+dropper - un tip de trojan cu scopul de a instala malware intr-un calculator
+downloader - un tip de dropper care necesita acces la internet
+trojan - un tip de malware care inseala prin aparenta, parand ca ar realiza ceva util
+spyware - un tip de malware care capteaza pe ascuns date ale utilizatorului
+riskware - un tip de software a carui instalare sau executie ar putea cauza daune utilizatorului
+ransomware - un tip de malware care encripteaza datele de pe un dispozitiv
+adware - program care afiseaza reclame la rulare, dar care nu contine cod nociv
+worm - un tip de malware care se autoreplica pentru a se raspandi pe alte dispozitive, fara a fi necesar sa se atasaeze unui alt program
+obfuscare - modificarea codului sursa intr-un format greu de citit, fara a pierde functionalitatea initiala

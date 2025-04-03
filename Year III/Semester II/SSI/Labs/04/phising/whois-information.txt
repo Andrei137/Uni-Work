@@ -1,0 +1,54 @@
+% This is the RIPE Database query service.
+% The objects are in RPSL format.
+%
+% The RIPE Database is subject to Terms and Conditions.
+% See http://www.ripe.net/db/support/db-terms-conditions.pdf
+
+% Note: this output has been filtered.
+%       To receive output for a database update, use the "-B" flag.
+
+% Information related to '5.45.184.0 - 5.45.191.255'
+
+% Abuse contact for '5.45.184.0 - 5.45.191.255' is 'jack.lebbos@computel.com.lb'
+
+inetnum:        5.45.184.0 - 5.45.191.255
+netname:        LB-JL-20120529
+country:        LB
+org:            ORG-CS182-RIPE
+admin-c:        JL6774-RIPE
+tech-c:         JL6774-RIPE
+status:         ALLOCATED PA
+mnt-by:         RIPE-NCC-HM-MNT
+mnt-lower:      JL32889-MNT
+mnt-routes:     JL32889-MNT
+created:        2012-05-29T08:53:34Z
+last-modified:  2016-04-14T07:50:48Z
+source:         RIPE # Filtered
+
+organisation:   ORG-CS182-RIPE
+org-name:       Computel SAL
+org-type:       LIR
+address:        Jdeideh Pierre Gemayel Street
+address:        90766
+address:        Beirut
+address:        LEBANON
+mnt-ref:        JL32889-MNT
+mnt-ref:        RIPE-NCC-HM-MNT
+mnt-by:         RIPE-NCC-HM-MNT
+abuse-c:        AD10966-RIPE
+created:        2012-05-18T09:26:56Z
+last-modified:  2016-03-11T09:09:59Z
+source:         RIPE # Filtered
+phone:          +9611884888
+fax-no:         +9611871481
+
+person:         Jack Lebbos
+address:        St. Antoine Center, Pierre A. Gemayel Street, New Jdeideh  | PO Box 90-776, Lebanon
+phone:          +9613849542
+nic-hdl:        JL6774-RIPE
+mnt-by:         JL32889-MNT
+created:        2012-05-18T09:47:55Z
+last-modified:  2012-05-18T09:47:57Z
+source:         RIPE # Filtered
+
+% This query was served by the RIPE Database Query Service version 1.91.2 (HEREFORD)

@@ -1,0 +1,39 @@
+1.
+A - 4
+B - 2
+C - 5
+D - 1
+E - 6
+F - 3
+
+2.
+1 - confidentialitate
+2 - disponibilitate
+3 - integritate
+4 - confidentialitate
+5 - integritate
+
+confidentialitate - algoritmi de criptare simetrica/asimetrica (AES, RSA)
+integritate - functii hash (SHA-256, MD5)
+
+3.
+1 - False
+2 - True
+3 - False
+
+4.
+1 - e ne-neglijabila, 2 > 1 / (n ^ 2)
+2 - e ne-neglijabila, 1 / 2000 > 1 / (2001 ^ c)
+3 - e ne-neglijabila, putem alege c 2001
+4 - e neglijabila, pt ca pentru orice c exista un m a.i. pentru orice n>m avem 2^n > n^c
+5 - e neglijabila, pt ca suma a doua functii neglijabile e neglijabila
+6 - e ne-neglijabila, din cauza ca f2 e ne-neglijabila
+
+5.
+Securitatea computationala permite un compromis intre securitate si eficienta, in schimb cea perfecta ar face utilizarea impractica si ar consuma multe resurse, facand scalarea dificila
+In practica, adversarii nu dispun de resurse infinite, deci este suficient ca sistemul sa reziste atacurilor cu timp rezonabil, nu neaparat infinit.
+
+6.
+- 2^512
+- 2^512 / 2^30 = 2^482
+- nu

@@ -1,0 +1,77 @@
+1.a.
+Codul este extrem de obfuscat, se foloseste de variabilele $, $_ si $__ pentru a construi dinamic niste console.log-uri
+
+1.b.
+Am rulat codul intr-un mediu izolat si am folosit un tool de deobfuscare
+https://replit.com/@13327/VisiblePinkLanserver#index.js
+https://lelinhtinh.github.io/de4js/
+
+1.c.
+Mesajul ascuns este 18367622009998665
+
+1.d.
+jjencode genereaza cod obfuscat 1:1 cu cel dat folosind codul clar de mai sus
+
+2.a.
+Codul ruleaza intr-un mediu Windows Script Host, utilizand ActiveXObject pentru a crea fila fmi.txt, in care va fi scris Bun venit la acest laborator :)
+
+2.b.
+Daca script-ul este folosit cu scopul de a speria utilizatori, atunci ar putea fi considerat malware. Insa, daca este folosit in scopuri educationale, nu ar trebui sa fie considerat malware.
+
+2.c.
+Script scris cu scop educational
+
+3.a.
+Este acelasi cod ca la exercitiul 2
+
+3.b.
+Expresia ‘\x$$’ reprezinta o secventa de escape urmata de niste caractere, menite sa reprezinte caractere prin cod hexazecimal
+Practic \x41 este echivalent cu 0x41
+
+node> "\x41" === String.fromCharCode(0x41)
+true
+
+3.c.
+In primul sample mesajele din variabile sunt in text clar intr-o oarecare masura, in al doilea totul este sub format Hex
+In primul sample nu este neaparat evident ca s-ar apela un WScript, in schimb in al doilea se observa clar aceasta intentie
+
+4.a.
+Codul malitios este
+JSZQ92(BASE64STR, "" + FZ52 + "hello.exe");
+JSZQ92(BASE64STR, "" + FZ52 + "libstdc++-6.dll");
+JSZQ92(BASE64STR, "" + FZ52 + "libgcc_s_dw2-1.dll");
+JSZQ92(BASE64STR, "" + FZ52 + "libmingwex-0.dll");
+JSZQ99("" + FZ52 + "hello.exe");
+
+Analizam ceea ce face JSZQ92:
+- se creaza un obiect b, de tip ADODB.Stream, care este folosit pentru stream-uri de binar sau text
+- se creaza un obiect c, de tip Msxml2.DOMDocument.6.0, care este un XML Parser, si se creaza un element <tmp> in memorie, care tine informatie de tip Base64
+- se asigneaza string-ul a (care probabil contine codul malitios) lui c
+- c.nodeTypedValue returneza binarul string-ului din c
+- se seteaza tipul lui b la binar, se deschide stream-ul, se scrie c si se salveaza in locatia d
+
+Practic, se adauga fisierele hello.exe, libstdc++-6.dll, libgcc_s_dw2-1.dll, libmingwex-0.dll in folder-ul %temp%, care a fost preluat din PATH, si apoi se ruleaza hello.exe, care probabil se foloseste de dll-uri in scopuri malitioase
+
+4.b.
+File type:   Windows Portable Executable
+Extension:   exe,dll,drv,vxd,sys,ocx,vbx,com,fon,scr
+MIME type:   application/vnd.microsoft.portable-executable
+
+4.c.
+Cel mai probabil, a fost detectat de Windows Security de la primul download
+In plus, prin analiza statica facuta la 4.a., putem zice destul de clar ca este malware
+
+4.d.
+https://www.virustotal.com/gui/file/a196ea13937f9b858c9fb2a56eecf139d324a022cbd21adcc217f7e581a73e21
+25/62 detectii, destul de mare pentru a fi doar un false positive
+are label-uri de trojan si downloader
+hello.exe are si el 2 detections
+umbla si in registry keys, la Windows Script Host
+este flag-uit ca MALWARE EVADER de Zenbox
+
+4.e.
+https://www.virustotal.com/gui/file/4d6bd936cb25a2111392b84ba13077bd87c24309e57ae8c2f99141197776278d
+Doar 5/62 detectii, cu toate ca 2 sunt de la Google si Kaspersky, ar putea trece ca si false positive pentru cineva suficient de neatent/grabit
+Inca se detecteaza relatiile cu "sample4" sau "obfuscatedsample4" la details si cu "hello.exe" la relations
+Nu se mai gasesc detectii de behavior, cu toate ca Zenbox inca este printre sandbox-urile care fac raporturi
+Clar mai periculos si mai greu de detectat decat originalul "sample4.js"

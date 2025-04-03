@@ -1,0 +1,99 @@
+Delivered-To: andrei.fabian188@gmail.com
+Received: by 2002:ab3:764f:0:b0:293:2937:2af7 with SMTP id p15csp1319309lti;
+        Sat, 29 Mar 2025 15:37:18 -0700 (PDT)
+X-Google-Smtp-Source: AGHT+IFa/SPB7Yoou96SCZbFHJv3RGWIwwrpY0cjbkD2UD6x/kY9b+QslR/yjF1qXNn1AQVLcc1L
+X-Received: by 2002:a17:907:2ce3:b0:ab3:2b85:5d5 with SMTP id a640c23a62f3a-ac738c59da4mr294868266b.49.1743287838293;
+        Sat, 29 Mar 2025 15:37:18 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1743287838; cv=none;
+        d=google.com; s=arc-20240605;
+        b=LSUuYqRZ3wfVdhR6tyy2jl1Yl+aD5qlv1LkR0sjxkO0ely3zBJNtoMPNMEBRrHZjqP
+         qmCrg99AIQemU0ag6jxtuDWlR0aSO/G/7o4nHnjxbU1ahiBZmn6fEcLVb17zNQJ20gWZ
+         1CZvOew9cvxaHWmI/ZbaPkRSFiZeHl4H7c41Ix+AcUkv4h33CZcnBx3HusCu/zwC05ot
+         ukWZ0483kJxzn3Pue4ibo8aXVhmtMKVaY9aPb6gbrLVFdaMRKHE2ydXS9Qy//vvmYgsM
+         v5qfXk+WdlLqnuRr4CaDaObT2qAP/m834J3w0bYYbItsW9y1ZFWAjxMhYpAsMUAVyJP3
+         iU1w==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=content-transfer-encoding:mime-version:list-unsubscribe
+         :list-unsubscribe-post:message-id:subject:from:to:date
+         :dkim-signature;
+        bh=nqwOkD8zojjYdjfSczyo6v/pkEDsG6x9IgFqldnD9hs=;
+        fh=3JcsWirk6fcARomW7CSUAARZDEV1k5TLND3yyDFO9x0=;
+        b=WT3a2B0tf4WDJehmQKQ1ZU+DeBuMXri41+XB9drscR9j/hp3zbHVY1/GwEmPEywFUY
+         bAIaSDbCu543RgPYPX3VpjNviTAK1qFzMBPbs4rbNaWXRbyhNt5xqXoeq11iNxQb+El+
+         S7V29rJBmwP6uyvDK+QrwPy8NCD+6MAELIFJ9hlWWeH4gzAamjpIiaBV0UghWzLw571L
+         rOBuejF16UYBOV8LBW6dPexao6zRgf5+7XBtJWLkA5+eq1T5/h+WBta6bW/mZor2W1je
+         eJq5fARAy2LRc5+wQOIuTjMl9RgR1Aj0jIaj5SSNl6oigqEbZxvD0l8JWoUoJuMirMQM
+         ciDw==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@anonymousemail.eu header.s=mail header.b=ufYZ04RZ;
+       spf=pass (google.com: domain of noreply@anonymousemail.eu designates 5.45.184.142 as permitted sender) smtp.mailfrom=noreply@anonymousemail.eu;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=anonymousemail.eu
+Return-Path: <noreply@anonymousemail.eu>
+Received: from s9.inboxpress.eu (s9.inboxpress.eu. [5.45.184.142])
+        by mx.google.com with ESMTPS id a640c23a62f3a-ac71960fb12si338066466b.591.2025.03.29.15.37.18
+        for <andrei.fabian188@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+        Sat, 29 Mar 2025 15:37:18 -0700 (PDT)
+Received-SPF: pass (google.com: domain of noreply@anonymousemail.eu designates 5.45.184.142 as permitted sender) client-ip=5.45.184.142;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@anonymousemail.eu header.s=mail header.b=ufYZ04RZ;
+       spf=pass (google.com: domain of noreply@anonymousemail.eu designates 5.45.184.142 as permitted sender) smtp.mailfrom=noreply@anonymousemail.eu;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=anonymousemail.eu
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=anonymousemail.eu; s=mail; t=1743287838; bh=nqwOkD8zojjYdjfSczyo6v/pkEDsG6x9IgFqldnD9hs=; h=Date:To:From:Subject:List-Unsubscribe:From; b=ufYZ04RZ8IvpElOmb0RhjRXZtzSY1Y2dHWOYz7MbHdI9CW09lMyYnGc+GuHi6IAx7
+     VTZIBmcO5c/y1lAu72mila9efjuQb/iAHE3KUyf1r7kUtXnoUc5FDI+FPKnSY4my2+
+     KMb6gPCFbKUXbfnsl/zOsxI+nmSEdrU6ORM10ynzNKRafdCabcMmvoHMjy+510c32/
+     FDADRacGX/ZXmAicpbsSk3/RWRoOQc2Ee/ezh/5SneRyxQcOo2G0inn8ueCtFZrcaJ
+     W0yYR9oKWRAGBisNy7CXalGjofPI2sCPiQb9m+yjREA/+YWCxHCS6IbSXnMK2Pu1U8
+     fclmQ9pKD7a6A==
+Received: from authenticated-user (s9.inboxpress.eu [5.45.184.142]) (using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits)
+     key-exchange X25519 server-signature RSA-PSS (2048 bits) server-digest SHA256) (No client certificate requested) by s9.inboxpress.eu (Postfix) with ESMTPSA id EFB7E632BF for <andrei.fabian188@gmail.com>; Sat, 29 Mar 2025 22:37:17 +0000 (UTC)
+Date: Sat, 29 Mar 2025 22:37:17 +0000
+To: andrei.fabian188@gmail.com
+From: Anonymousemail <noreply@anonymousemail.eu>
+Subject: Hollow Knight Silksong
+Message-ID: <5a3911bd8931fee7de2c90c917822254@anonymousemail.eu>
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+List-Unsubscribe: <https://anonymousemail.eu/unsubscribe.php?uid=aER4dWNrNy81blVwU0RjblUyanJING1iOXgvQlFyQVZPV01DalpqL3BTRT0=>
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="b1=_HyQinOpFh8J88s3Xu8WukQ8qepNU5ykHxpnTDFdJAkY"
+Content-Transfer-Encoding: 8bit
+
+--b1=_HyQinOpFh8J88s3Xu8WukQ8qepNU5ykHxpnTDFdJAkY
+Content-Type: text/plain; charset=us-ascii
+
+Powered by Anonymousemail
+
+Dear gamer,
+
+We have noticed your recent interest in metroidvanias.
+thus, we have decided to gift you an early access copy of the long awaited Hollow Knight Silksong!
+
+It is completely free and it will remain in your account when the full games releases.
+you only have 48 hours left to claim in from the link below:
+
+https://tinyurl.com/silksong-free
+
+we can't wait to hear your thoughts on the game!
+
+Steam
+
+--b1=_HyQinOpFh8J88s3Xu8WukQ8qepNU5ykHxpnTDFdJAkY
+Content-Type: text/html; charset=us-ascii
+
+<p><span style="color:#c0392b">Powered by <strong>Anonymousemail</strong></span></p>Dear gamer,<br />
+<br />
+We have noticed your recent interest in metroidvanias.<br />
+thus, we have decided to gift you an early access copy of the long awaited Hollow Knight Silksong!<br />
+<br />
+It is completely free and it will remain in your account when the full games releases.<br />
+you only have 48 hours left to claim in from the link below:<br />
+<br />
+https://tinyurl.com/silksong-free<br />
+<br />
+we can&#39;t wait to hear your thoughts on the game!<br />
+<br />
+Steam
+
+
+--b1=_HyQinOpFh8J88s3Xu8WukQ8qepNU5ykHxpnTDFdJAkY--

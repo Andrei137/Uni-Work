@@ -13,8 +13,8 @@
 [submodule "Year II/Semester I/DAW/Project"]
 	path = Year II/Semester I/DAW/Project
 	url = https://github.com/Andrei137/DragonsLegacy.git
-[submodule "Year II/Semester II/SGBD/Project"]
-    path = Year II/Semester II/SGBD/Project
+[submodule "Year II/Semester I/SGBD/Project"]
+    path = Year II/Semester I/SGBD/Project
     url = https://github.com/Andrei137/DBMS-Project.git
 [submodule "Year II/Semester I/SO/Project"]
 	path = Year II/Semester I/SO/Project
@@ -67,3 +67,12 @@
 [submodule "Year III/Semester I/Grafica/Projects/ChristmasSpirit"]
 	path = Year III/Semester I/Grafica/Projects/ChristmasSpirit
 	url = https://github.com/Andrei137/ChristmasSpirit
+[submodule "Year III/Semester II/PE/Abur"]
+	path = Year III/Semester II/PE/Abur
+	url = https://github.com/FMI-ProductionEngineering-TRIFECTA/Abur
+[submodule "Year III/Semester II/FPC/Projects/lexer"]
+	path = Year III/Semester II/FPC/Projects/lexer
+	url = https://github.com/Andrei137/Javascript-Lexer
+[submodule "Year III/Semester II/FPC/Projects/regex-to-dfa"]
+	path = Year III/Semester II/FPC/Projects/regex-to-dfa
+	url = https://github.com/Andrei137/Regex-to-DFA
