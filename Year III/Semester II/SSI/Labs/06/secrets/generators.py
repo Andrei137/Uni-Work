@@ -7,7 +7,7 @@ import bcrypt
 
 def generate_secure_password(length=10):
     if length < 10:
-        raise ValueError("Password length must be at least 10 characters!")
+        raise ValueError("Length must be at least 10 characters!")
 
     special_chars = ".!$@"
     all_chars = string.ascii_letters + string.digits + special_chars
@@ -23,11 +23,17 @@ def generate_secure_password(length=10):
 
 
 def generate_url_safe_token(length=32):
-    return secrets.token_urlsafe(length * 6 // 8)
+    if length < 32:
+        raise ValueError("Length must be at least 32 characters!")
+
+    return secrets.token_urlsafe(length * 6 // 8)  # 6 bits per Base64 char / 8
 
 
 def generate_hex_token(length=32):
-    return secrets.token_hex(length // 2)
+    if length < 32:
+        raise ValueError("Length must be at least 32 characters!")
+
+    return secrets.token_hex(length // 2)  # 1 hexadecimal = 4 bits = 1 / 2 bytes
 
 
 def generate_binary_key(length=100):

@@ -1,0 +1,26 @@
+1.a.
+Am deschis poza malware si o poza legita si am folosit process monitor si process explorer pentru a urmari PID-urile celor 2 (obtinute prin Task Manager) pentru a urmari call-urile de system si resursele folosite.
+Am observat ca poza legita face call-uri la regedit catre HKLM (HKEY_LOCAL_MACHINE) care par sa foloseasca doar resurse si functii necesare pentru imagini, in schimb malkware-ul face call-uri catre HKCU (HKEY_CURRENT_USER), cere acces la tot instant si il primeste, si apoi umbla prin registrii al altor aplicatii precum control panel (International\Geo\Name), Clipchamp si DesignerEditor
+
+1.b.
+La finalul textului decodat de HxD, am gasit textul gasit la finalul fisierului photo_hex.txt
+Observam keyword-uri de genul "InitializeCriticalSection", "EnterCriticalSection", "fwrite", "mingw", "libstdc___6_dll_iname", "strcat", care duc cu gandul la C++ si Windows API calls, deci imaginea este cel mai probabil un binar PE cu scopuri malitioase ("_LoadLibraryA@4", "_GetProcAddress@8")
+
+1.c.
+https://www.virustotal.com/gui/file/dbd3b32b7327855cd335f14becb7f155e8fa166bf440f856752d87b7a44fdda6
+
+Doar 2/60 detectari, dar una este de la Google. Detaliile asimileaza poza cu alte nume precum "malware.exe", "HxD.png", "myfile.exe" si "malwareHxD", iar pe community apare un mesaj care sugereaza "Embedded EXE Cloaking"
+
+1.d.
+textul suspicios ca png - https://www.virustotal.com/gui/file/9129edc843fb2ecdb1189049b6b4629d8a7049ced632a5b37b3dd31205021185
+textul supsicios ca txt - https://www.virustotal.com/gui/file/80ac7e557aa1b0ef5b99274e7730fb7bf8dc9838f037a0c7b49119f87f66f494
+textul suspicios ca hex - https://www.virustotal.com/gui/file/36be19755b3edabf9b4d379262f9bfa825da2fa9de84185764f7ea305aefa748
+
+1.e.
+Da, cele 3 dll-uri apar in textul suspicios din poza, cel probabil are nevoie de ele pentru a putea executa exe-ul cu succes. Faptul ca mesajul este asa scurt duce cu gandul la faptul ca sunt linkuite dinamic, nu static, asadar poza ar avea nevoie de ele pentru a rula.
+
+1.f.
+Este malware, dar nu pare ca mai merge (am incercat sa reproduc situatiile din codul din poza), probabil nu cunoastem path-ul unde incarca sa linkuiasca DLL-urile.
+
+2.
+Atacul se numeste Buffer Overflow, iar parola care merge este "abcdefOabcdef", pentru ca cin >> nu verifica si length-ul, deci password va fi suprascris cu "abcdef"

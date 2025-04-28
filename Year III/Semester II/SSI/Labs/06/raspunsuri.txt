@@ -1,14 +1,13 @@
 1.
 Candidatul 1: Dupa primul seed, returneaza doar 0
 Candidatul 2: Se poate identifica relativ usor formula, generarea fiind crescatoare
-Candidatul 3: Mereu returneaza acelasi numar, seed / 4
+Candidatul 3: Mereu returneaza seed_vechi / 4, ceea ce e predictibil si tinde spre 0
 
 2.1.
 Folosit pentru generarea de parole sigure pentru resetarea contului/utilizatori noi
 
 2.2.
-Folosit ca identificator unic pentru r
-esurse (pt REST API de ex, unde id-ul apare in url)
+Folosit ca identificator unic pentru resurse (pt REST API de ex, unde id-ul apare in url)
 
 2.3.
 Folosit pentru autentificarea bazata pe token-uri
@@ -35,7 +34,7 @@ CWE-341
     - Predictable from Observable State
     - https://cwe.mitre.org/data/definitions/341.html
 
-Daca spatial de valori random posibile este mic
+Daca spatiul de valori random posibile este mic
 CWE-334
     - Small Space of Random Values
     - https://cwe.mitre.org/data/definitions/334.html
@@ -43,10 +42,10 @@ Atacul
     - https://capec.mitre.org/data/slices/333.html
     - "If the secret was chosen algorithmically, cryptanalysis can be applied to the algorithm to discover patterns in this algorithm. (This is true even if the secret is not used in cryptography.) Periodicity, the need for seed values, or weaknesses in the generator all can result in a significantly smaller secret space."
 
-CWE-331
-    - Insufficient Entropy
-    - https://cwe.mitre.org/data/definitions/331.html
-    - CVE: https://www.cve.org/CVERecord?id=CVE-2024-6508
+CWE-344
+    - Use of Invariant Value in Dynamically Changing Context
+    - https://cwe.mitre.org/data/definitions/344.html
+    - CVE: https://www.cve.org/CVERecord?id=CVE-2023-22746
 CWE-338
     - Use of Cryptographically Weak Pseudo-Random Number Generator (PRNG)
     - https://cwe.mitre.org/data/definitions/338.html

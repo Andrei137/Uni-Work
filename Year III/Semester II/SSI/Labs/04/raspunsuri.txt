@@ -13,7 +13,7 @@ Email marcat automat ca junk
 Titlu nesugestiv
 
 3.
-SBF (Sender Policy Framework)
+SPF (Sender Policy Framework)
 - controleaza cine are voie sa trimita email-uri
 
 DKM (DomainKeys Identified Mail)
