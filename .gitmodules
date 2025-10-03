@@ -76,3 +76,6 @@
 [submodule "Year III/Semester II/FPC/Projects/regex-to-dfa"]
 	path = Year III/Semester II/FPC/Projects/regex-to-dfa
 	url = https://github.com/Andrei137/Regex-to-DFA
+[submodule "Year III/Semester II/MFIS/Project"]
+	path = Year III/Semester II/MFIS/Project
+	url = https://github.com/Andrei137/mfis-project
